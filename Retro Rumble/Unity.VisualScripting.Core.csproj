@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F718E335-6AAA-C941-FFD7-657246BEB012}</ProjectGuid>
+    <ProjectGuid>{6793F35F-0D4F-DB5C-C829-1E260C312D5B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.VisualScripting.Core</AssemblyName>
@@ -1154,7 +1154,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.InputSystem.csproj">
-      <Project>{67902707-2E49-4DAC-7E08-A40DC440FCD5}</Project>
+      <Project>{A0185CAA-1D5D-C607-15ED-10F412F59BDB}</Project>
       <Name>Unity.InputSystem</Name>
     </ProjectReference>
   </ItemGroup>

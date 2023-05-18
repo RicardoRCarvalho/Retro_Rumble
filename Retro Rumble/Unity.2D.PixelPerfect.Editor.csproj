@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5EB38D99-A095-482A-3B9F-52E41599B67D}</ProjectGuid>
+    <ProjectGuid>{68B2C7D9-25B2-E8BA-8D0A-AC45DA862930}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.2D.PixelPerfect.Editor</AssemblyName>
@@ -747,15 +747,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.2D.PixelPerfect.csproj">
-      <Project>{62529D1F-B8E2-3138-286F-C5D1C984DDDD}</Project>
+      <Project>{28B9A135-644D-C173-1A5A-F9E2863B59FD}</Project>
       <Name>Unity.2D.PixelPerfect</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{01B1BFF9-F8EB-01DA-B770-0788E04F46BD}</Project>
+      <Project>{EAA5137F-7433-8BAD-6BE2-512AA2EFB678}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{A3047590-38BB-CCB1-C01D-C771027F8920}</Project>
+      <Project>{313EA430-6EC5-89F6-164E-9FADB6E42412}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
