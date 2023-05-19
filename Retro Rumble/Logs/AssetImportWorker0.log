@@ -2643,3 +2643,71 @@ Received Import Request.
   path: Assets/PlayerAnimations/Player1AnimationControler.controller
   artifactKey: Guid(09bd7cd7a4f4e3a4b94eee5cbc8be19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/PlayerAnimations/Player1AnimationControler.controller using Guid(09bd7cd7a4f4e3a4b94eee5cbc8be19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b08199345bd4a403b375198f4a5f2952') in 0.004783 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004961 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Pedro Henrique\Documents\GitHub\Retro_Rumble\Retro Rumble\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Pedro Henrique\Documents\GitHub\Retro_Rumble\Retro Rumble\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.809 seconds
+Domain Reload Profiling:
+	ReloadAssembly (810ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (635ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (224ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (276ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (181ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4067 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (24.7 KB). Loaded Objects now: 4674.
+Memory consumption went from 155.3 MB to 155.3 MB.
+Total: 3.051600 ms (FindLiveObjects: 0.433700 ms CreateObjectMapping: 0.103700 ms MarkObjects: 2.495500 ms  DeleteObjects: 0.018200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 196.992630 seconds.
+  path: Assets/PlayerAnimations/Player1AnimationControler.controller
+  artifactKey: Guid(09bd7cd7a4f4e3a4b94eee5cbc8be19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnimations/Player1AnimationControler.controller using Guid(09bd7cd7a4f4e3a4b94eee5cbc8be19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3979d360bbbf3d3ad2d730d99af41a77') in 0.019110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.262424 seconds.
+  path: Assets/Scenes/Cena1.unity
+  artifactKey: Guid(ca8bbb2c2cb1d334983c76fdc4f6ad27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Cena1.unity using Guid(ca8bbb2c2cb1d334983c76fdc4f6ad27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a5ddd2ddf92259b3a5035129c8f80a') in 0.006727 seconds 

@@ -76,6 +76,7 @@ public class PlayerControls : MonoBehaviour
         else
         {
             anim.SetBool("isWalking", false);
+            //acho q esses valores vão ter q mudar pra não bugar o pulo
             horizontal = 0;
             vertical = 0;
         }
