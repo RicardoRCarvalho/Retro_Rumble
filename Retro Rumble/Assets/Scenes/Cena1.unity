@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 752726339}
   - component: {fileID: 752726338}
   - component: {fileID: 752726337}
+  - component: {fileID: 752726343}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -256,6 +257,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7806ae33-0221-4f22-acb5-ca9ade336491
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b46cdb6a-8583-4721-8e52-c08c6b8d907a
+    m_ActionName: Player/Attack[/Keyboard/j]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -375,6 +380,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &752726343
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752726336}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09bd7cd7a4f4e3a4b94eee5cbc8be19a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &845678985
 GameObject:
   m_ObjectHideFlags: 0

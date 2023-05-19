@@ -18,16 +18,21 @@ public class PlayerControls : MonoBehaviour
     private float vertical;
     bool facingRight;
 
+    private Animator anim;
+    private bool isWalking;
+    private bool isAttacking;
     //pulo
     bool isJumping;
     float lastY;
-
+    #region PlayerMovement
     //Atualiza de acordo com o editor
     private void FixedUpdate()
     {
         if(!isJumping)
         {
             rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+
+            anim.SetBool("isJumping", true);
         }
         else
         {
@@ -36,29 +41,50 @@ public class PlayerControls : MonoBehaviour
             {
                 onLanding();
             }
+            anim.SetBool("isJumping", false);
         }
+     //  if (isAttacking)
+       // {
+       //     anim.SetBool("isAttacking", true);
+      //  }
+      //  else
+      //  {
+      //      anim.SetBool("isAttacking", false);
+     //   }
     }
-
+    private void Update()
+    {
+        
+    }
     //Movimento
     public void Move(InputAction.CallbackContext context)
     {
         horizontal = context.ReadValue<Vector2>().x;
         vertical = context.ReadValue<Vector2>().y;
         Flip(horizontal);
+        anim.SetBool("isWalking", true);
+
     }
 
     //Pulo
     public void Jump(InputAction.CallbackContext context)
     {
-        if(!isJumping)
+        if (context.performed)
         {
-            lastY = transform.position.y;
-            isJumping = true;
-            rb.gravityScale = 1.5f;
-            rb.WakeUp();
-            rb.AddForce(new Vector2(transform.position.x + 7.5f, jumpingPower));
+            if (!isJumping)
+            {
 
+                lastY = transform.position.y;
+                isJumping = true;
+                rb.gravityScale = 1.5f;
+                rb.WakeUp();
+                rb.AddForce(new Vector2(transform.position.x + 7.5f, jumpingPower));
+
+
+
+            }
         }
+      
     }
 
     //inverter o lado que está olhando
@@ -81,4 +107,17 @@ public class PlayerControls : MonoBehaviour
         rb.Sleep();
         lastY = transform.position.y;
     }
+    
+    #endregion
+    #region PlayerAttack
+    public void Attack(InputAction.CallbackContext context) 
+    {
+
+        isAttacking = true;
+
+        
+    }
+ 
+    #endregion
+
 }

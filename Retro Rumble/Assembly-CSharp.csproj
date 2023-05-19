@@ -59,6 +59,10 @@
     <Compile Include="Assets\Scripts\Player\PlayerControls.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AnimationPlaceholder\craftpix-891178-free-3-character-sprite-sheets-pixel-art\license.txt" />
+    <None Include="Assets\AnimationPlaceholder\craftpix-891178-free-3-character-sprite-sheets-pixel-art\Font.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.25f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
