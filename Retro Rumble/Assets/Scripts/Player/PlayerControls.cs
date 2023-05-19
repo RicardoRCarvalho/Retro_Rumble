@@ -9,7 +9,8 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
 
     [Header("Player Settings")]
-    [SerializeField] float speed;
+    [SerializeField] float vSpeed;
+    [SerializeField] float hSpeed;
     [SerializeField] float jumpingPower;
 
     [Header("Grounding")]
@@ -17,31 +18,37 @@ public class PlayerControls : MonoBehaviour
     private float horizontal;
     private float vertical;
     bool facingRight;
-
+    //Variaveis de animação
     private Animator anim;
     private bool isWalking;
     private bool isAttacking;
     //pulo
-    bool isJumping;
+    bool isJumping = false;
     float lastY;
     #region PlayerMovement
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     //Atualiza de acordo com o editor
     private void FixedUpdate()
     {
         if(!isJumping)
         {
-            rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+            rb.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
 
-            anim.SetBool("isJumping", true);
+            
         }
         else
         {
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            rb.velocity = new Vector2(horizontal * hSpeed, rb.velocity.y);
             if (transform.position.y <= lastY - 0.00000001)
             {
                 onLanding();
             }
-            anim.SetBool("isJumping", false);
+            
         }
      //  if (isAttacking)
        // {
@@ -59,31 +66,40 @@ public class PlayerControls : MonoBehaviour
     //Movimento
     public void Move(InputAction.CallbackContext context)
     {
-        horizontal = context.ReadValue<Vector2>().x;
-        vertical = context.ReadValue<Vector2>().y;
-        Flip(horizontal);
-        anim.SetBool("isWalking", true);
-
+        if (context.performed)
+        {
+            horizontal = context.ReadValue<Vector2>().x;
+            vertical = context.ReadValue<Vector2>().y;
+            Flip(horizontal);
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+            horizontal = 0;
+            vertical = 0;
+        }
     }
 
     //Pulo
     public void Jump(InputAction.CallbackContext context)
     {
-        if (context.performed)
-        {
+        //if (context.performed)
+       // {
             if (!isJumping)
             {
 
+                
                 lastY = transform.position.y;
                 isJumping = true;
                 rb.gravityScale = 1.5f;
                 rb.WakeUp();
                 rb.AddForce(new Vector2(transform.position.x + 7.5f, jumpingPower));
 
-
+                anim.SetBool("isJumping", true);
 
             }
-        }
+       // }
       
     }
 
@@ -106,6 +122,7 @@ public class PlayerControls : MonoBehaviour
         rb.gravityScale = 0f;
         rb.Sleep();
         lastY = transform.position.y;
+        anim.SetBool("isJumping", false);
     }
     
     #endregion

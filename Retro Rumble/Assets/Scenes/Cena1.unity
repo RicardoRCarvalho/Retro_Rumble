@@ -158,7 +158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 752726339}
-  speed: 5
+  vSpeed: 1.7
+  hSpeed: 2.3
   jumpingPower: 300
 --- !u!114 &752726338
 MonoBehaviour:
