@@ -35,15 +35,8 @@ public class PlayerControls : MonoBehaviour
     //Atualiza de acordo com o editor
     private void FixedUpdate()
     {
-        if(!isJumping)
+        if(isJumping)
         {
-            rb.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
-
-            
-        }
-        else
-        {
-            rb.velocity = new Vector2(horizontal * hSpeed, rb.velocity.y);
             if (transform.position.y <= lastY - 0.00000001)
             {
                 onLanding();
@@ -70,6 +63,14 @@ public class PlayerControls : MonoBehaviour
         {
             horizontal = context.ReadValue<Vector2>().x;
             vertical = context.ReadValue<Vector2>().y;
+            if(!isJumping)
+            {
+                rb.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
+            }
+            else
+            {
+                rb.velocity = new Vector2(horizontal * hSpeed, rb.velocity.y);
+            }
             Flip(horizontal);
             anim.SetBool("isWalking", true);
         }
@@ -77,8 +78,7 @@ public class PlayerControls : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
             //acho q esses valores vão ter q mudar pra não bugar o pulo
-            horizontal = 0;
-            vertical = 0;
+            rb.velocity = new Vector2(0, 0);
         }
     }
 
@@ -95,6 +95,7 @@ public class PlayerControls : MonoBehaviour
                 isJumping = true;
                 rb.gravityScale = 1.5f;
                 rb.WakeUp();
+                rb.velocity = new Vector2(rb.velocity.x, 0);
                 rb.AddForce(new Vector2(transform.position.x + 7.5f, jumpingPower));
 
                 anim.SetBool("isJumping", true);
@@ -122,6 +123,7 @@ public class PlayerControls : MonoBehaviour
         isJumping = false;
         rb.gravityScale = 0f;
         rb.Sleep();
+        rb.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
         lastY = transform.position.y;
         anim.SetBool("isJumping", false);
     }
