@@ -109,7 +109,7 @@ public class PlayerControls : MonoBehaviour
                 rb.AddForce(new Vector2(transform.position.x + 7.5f, jumpingPower));
 
                 anim.SetBool("isJumping", true);
-
+     
             }
        // }
       
@@ -144,13 +144,18 @@ public class PlayerControls : MonoBehaviour
     {
 
         anim.SetBool("isAttacking", true);
-        Collider2D[]enemy = Physics2D.OverlapCircleAll(hitboxPoint.transform.position,radiusHitbox, enemies);
-        foreach(Collider2D enemyGameOBject in enemy)
+      
+
+    }
+    public void basicAttack()
+    {
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(hitboxPoint.transform.position, radiusHitbox, enemies);
+        foreach (Collider2D enemyGameOBject in enemy)
         {
             Debug.Log("HitEnemy");
         }
-
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(hitboxPoint.transform.position, radiusHitbox);

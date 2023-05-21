@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\PlayerControls.cs" />
+    <Compile Include="Assets\Scripts\Inimigos\inimigoBasic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AnimationPlaceholder\craftpix-891178-free-3-character-sprite-sheets-pixel-art\license.txt" />
