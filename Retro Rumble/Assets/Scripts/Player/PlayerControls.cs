@@ -43,14 +43,19 @@ public class PlayerControls : MonoBehaviour
             }
             
         }
-     //  if (isAttacking)
-       // {
-       //     anim.SetBool("isAttacking", true);
-      //  }
-      //  else
-      //  {
-      //      anim.SetBool("isAttacking", false);
-     //   }
+        //Acabar com a animação de ataque
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        {
+            anim.SetBool("isAttacking", false);
+        }
+        //  if (isAttacking)
+        // {
+        //     anim.SetBool("isAttacking", true);
+        //  }
+        //  else
+        //  {
+        //      anim.SetBool("isAttacking", false);
+        //   }
     }
     private void Update()
     {
@@ -133,9 +138,9 @@ public class PlayerControls : MonoBehaviour
     public void Attack(InputAction.CallbackContext context) 
     {
 
-        isAttacking = true;
-
+        anim.SetBool("isAttacking", true);
         
+
     }
  
     #endregion
