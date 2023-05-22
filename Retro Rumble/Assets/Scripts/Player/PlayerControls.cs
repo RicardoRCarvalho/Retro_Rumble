@@ -6,7 +6,8 @@ using UnityEngine.InputSystem;
 public class PlayerControls : MonoBehaviour
 {
     [Header("Player Component References")]
-    [SerializeField] Rigidbody2D rb;
+    [SerializeField] Rigidbody2D rbPcSprite;
+    [SerializeField] Rigidbody2D rbPcSombra;
 
     [Header("Player Settings")]
     [SerializeField] float vSpeed;
@@ -14,6 +15,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float jumpingPower;
 
     [Header("Grounding")]
+    public GameObject GoSombra;
     //Movimento
     private float horizontal;
     private float vertical;
@@ -29,7 +31,7 @@ public class PlayerControls : MonoBehaviour
     public LayerMask enemies;
     //pulo
     bool isJumping = false;
-    float lastY;
+    float Landing;
     #region PlayerMovement
 
     void Start()
@@ -42,7 +44,8 @@ public class PlayerControls : MonoBehaviour
     {
         if(isJumping)
         {
-            if (transform.position.y <= lastY - 0.00000001)
+            
+            if (transform.position.y <= rbPcSombra.position.y - 0.00000001)
             {
                 onLanding();
             }
@@ -62,6 +65,14 @@ public class PlayerControls : MonoBehaviour
         //      anim.SetBool("isAttacking", false);
         //   }
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject == GoSombra)
+        {
+            // A colisão ocorreu com o objeto desejado
+            Debug.Log("Os objetos colidiram!");
+        }
+    }
     private void Update()
     {
         
@@ -69,49 +80,42 @@ public class PlayerControls : MonoBehaviour
     //Movimento
     public void Move(InputAction.CallbackContext context)
     {
-        if (context.performed)
-        {
+        
             horizontal = context.ReadValue<Vector2>().x;
             vertical = context.ReadValue<Vector2>().y;
-            if(!isJumping)
-            {
-                rb.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
-            }
-            else
-            {
-                rb.velocity = new Vector2(horizontal * hSpeed, rb.velocity.y);
-            }
+            
+           
+                rbPcSprite.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
+           
+
+                rbPcSombra.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
+                
+
             Flip(horizontal);
             anim.SetBool("isWalking", true);
-        }
-        else
-        {
-            anim.SetBool("isWalking", false);
-            //acho q esses valores vão ter q mudar pra não bugar o pulo
-            rb.velocity = new Vector2(0, 0);
-        }
+       
     }
 
     //Pulo
     public void Jump(InputAction.CallbackContext context)
     {
-        //if (context.performed)
-       // {
+     
             if (!isJumping)
             {
 
                 
-                lastY = transform.position.y;
+                Landing = transform.position.y;
                 isJumping = true;
-                rb.gravityScale = 1.5f;
-                rb.WakeUp();
-                rb.velocity = new Vector2(rb.velocity.x, 0);
-                rb.AddForce(new Vector2(transform.position.x + 7.5f, jumpingPower));
+                rbPcSprite.gravityScale = 1.5f;
+                rbPcSprite.WakeUp();
+                rbPcSprite.velocity = new Vector2(rbPcSprite.velocity.x, 0);
+                rbPcSprite.AddForce(new Vector2(transform.position.x + 7.5f, jumpingPower));
 
+                anim.SetBool("isWalking", false);
                 anim.SetBool("isJumping", true);
      
             }
-       // }
+      
       
     }
 
@@ -131,10 +135,11 @@ public class PlayerControls : MonoBehaviour
     private void onLanding()
     {
         isJumping = false;
-        rb.gravityScale = 0f;
-        rb.Sleep();
-        rb.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
-        lastY = transform.position.y;
+        rbPcSprite.gravityScale = 0f;
+        rbPcSprite.Sleep();
+        rbPcSombra.Sleep();
+        // rbPcSprite.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
+       // Landing = transform.position.y;
         anim.SetBool("isJumping", false);
     }
     
