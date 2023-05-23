@@ -15,7 +15,6 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float jumpingPower;
 
     [Header("Grounding")]
-    [SerializeField] GameObject GoSombra;
     [SerializeField] GameObject Player;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform groundCheck;
@@ -32,9 +31,13 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] GameObject hitboxPoint;
     [SerializeField] float radiusHitbox;
     public LayerMask enemiesGround;
-    //pulo
-    private bool isJumping;
-    float Landing;
+
+    [Header("Jump")]
+    private bool isGrounded;
+    [SerializeField] float timeToPeak = 0.5f;
+    [SerializeField] float timeToFall = 1f;
+    [SerializeField] float jumpTimer = 0f;
+
     #region PlayerMovement
 
     void Start()
@@ -45,15 +48,8 @@ public class PlayerControls : MonoBehaviour
     //Atualiza de acordo com o editor
     private void FixedUpdate()
     {
-        if (Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1f, 0.1f), CapsuleDirection2D.Horizontal, 0, groundLayer));
-        {
-            isJumping = false;
-            anim.SetBool("isJumping", false);
-            Debug.Log("noChao");
-        }
         
-        
-        if(isJumping)
+        if(!isGrounded)
         {
             onAir();
         }
@@ -75,10 +71,19 @@ public class PlayerControls : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject == GoSombra)
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            // A colisão ocorreu com o objeto desejado
-            Debug.Log("Os objetos colidiram!");
+            anim.SetBool("isJumping", false);
+            Debug.Log("Pousou");
+            isGrounded = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+            Debug.Log("pulo");
         }
     }
     private void Update()
@@ -103,7 +108,7 @@ public class PlayerControls : MonoBehaviour
 
 
             Flip(horizontal);
-            if (!isJumping)
+            if (isGrounded)
             {
                 anim.SetBool("isWalking", true);
             }
@@ -116,15 +121,17 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
+
+    
     //Pulo
     public void Jump(InputAction.CallbackContext context)
     {
 
-        if (context.performed && !isJumping)
+        if (context.performed && isGrounded)
         {
 
-                 Debug.Log("pulo");
-                isJumping = true;
+                 
+                isGrounded = false;
                 rbPcSprite.gravityScale = 1.5f;
             // rbPcSprite.WakeUp();
                 rbPcSprite.AddForce(new Vector2(transform.position.x , jumpingPower));
