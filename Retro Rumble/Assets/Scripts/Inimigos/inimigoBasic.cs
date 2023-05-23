@@ -27,8 +27,8 @@ public class inimigoBasic : MonoBehaviour
     private bool isAttacking;
 
     //Variaveis de Ataque
-    public GameObject hitboxPoint;
-    public float radiusHitbox;
+    [SerializeField] GameObject hitboxPoint;
+    [SerializeField] float radiusHitbox;
 
     //pulo
     bool isJumping = false;

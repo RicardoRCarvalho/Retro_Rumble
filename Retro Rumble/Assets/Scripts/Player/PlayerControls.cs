@@ -15,7 +15,10 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float jumpingPower;
 
     [Header("Grounding")]
-    public GameObject GoSombra;
+    [SerializeField] GameObject GoSombra;
+    [SerializeField] GameObject Player;
+    [SerializeField] LayerMask groundLayer;
+    [SerializeField] Transform groundCheck;
     //Movimento
     private float horizontal;
     private float vertical;
@@ -25,12 +28,12 @@ public class PlayerControls : MonoBehaviour
     private bool isWalking;
     private bool isAttacking;
 
-    //Variaveis de Ataque
-    public GameObject hitboxPoint;
-    public float radiusHitbox;
-    public LayerMask enemies;
+    [Header("Hitbox")]
+    [SerializeField] GameObject hitboxPoint;
+    [SerializeField] float radiusHitbox;
+    public LayerMask enemiesGround;
     //pulo
-    bool isJumping = false;
+    private bool isJumping;
     float Landing;
     #region PlayerMovement
 
@@ -42,15 +45,18 @@ public class PlayerControls : MonoBehaviour
     //Atualiza de acordo com o editor
     private void FixedUpdate()
     {
+        if (Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1f, 0.1f), CapsuleDirection2D.Horizontal, 0, groundLayer));
+        {
+            isJumping = false;
+            anim.SetBool("isJumping", false);
+        }
+        
         if(isJumping)
         {
-            
-            if (transform.position.y <= rbPcSombra.position.y - 0.00000001)
-            {
-                onLanding();
-            }
-            
+            onAir();
         }
+
+        
         //Acabar com a animação de ataque
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
@@ -80,43 +86,54 @@ public class PlayerControls : MonoBehaviour
     //Movimento
     public void Move(InputAction.CallbackContext context)
     {
-        
+        if (context.performed)
+        {
+
+
             horizontal = context.ReadValue<Vector2>().x;
             vertical = context.ReadValue<Vector2>().y;
-            
-           
-                rbPcSprite.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
-           
 
-                rbPcSombra.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
-                
+
+            rbPcSprite.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
+
+
+            rbPcSombra.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
+
 
             Flip(horizontal);
-            anim.SetBool("isWalking", true);
-       
+            if (!isJumping)
+            {
+                anim.SetBool("isWalking", true);
+            }
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+            rbPcSprite.velocity = new Vector2(0, 0);
+            rbPcSombra.velocity = new Vector2(0, 0);
+        }
     }
 
     //Pulo
     public void Jump(InputAction.CallbackContext context)
     {
-     
-            if (!isJumping)
-            {
 
-                
-                Landing = transform.position.y;
+        if (context.performed && !isJumping)
+        {
+
+                 Debug.Log("pulo");
                 isJumping = true;
                 rbPcSprite.gravityScale = 1.5f;
-                rbPcSprite.WakeUp();
-                rbPcSprite.velocity = new Vector2(rbPcSprite.velocity.x, 0);
-                rbPcSprite.AddForce(new Vector2(transform.position.x + 7.5f, jumpingPower));
+                // rbPcSprite.WakeUp();
+                rbPcSprite.velocity = new Vector2(rbPcSprite.velocity.x, jumpingPower);
+
 
                 anim.SetBool("isWalking", false);
                 anim.SetBool("isJumping", true);
      
-            }
+            
       
-      
+        }
     }
 
     //inverter o lado que está olhando
@@ -132,16 +149,18 @@ public class PlayerControls : MonoBehaviour
     }
 
     //Aterrisar no mesmo y que pulou
-    private void onLanding()
+    private void onAir()
     {
-        isJumping = false;
-        rbPcSprite.gravityScale = 0f;
-        rbPcSprite.Sleep();
-        rbPcSombra.Sleep();
+        
+        rbPcSprite.gravityScale = 1.5f;
+        //  rbPcSprite.gravityScale = 0f;
+        // rbPcSprite.Sleep();
+        // rbPcSombra.Sleep();
         // rbPcSprite.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
-       // Landing = transform.position.y;
+        // Landing = transform.position.y;
         anim.SetBool("isJumping", false);
     }
+
     
     #endregion
     #region PlayerAttack
@@ -154,7 +173,7 @@ public class PlayerControls : MonoBehaviour
     }
     public void basicAttack()
     {
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(hitboxPoint.transform.position, radiusHitbox, enemies);
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(hitboxPoint.transform.position, radiusHitbox, enemiesGround);
         foreach (Collider2D enemyGameOBject in enemy)
         {
             Debug.Log("HitEnemy");
