@@ -49,7 +49,9 @@ public class PlayerControls : MonoBehaviour
         {
             isJumping = false;
             anim.SetBool("isJumping", false);
+            Debug.Log("noChao");
         }
+        
         
         if(isJumping)
         {
@@ -124,8 +126,8 @@ public class PlayerControls : MonoBehaviour
                  Debug.Log("pulo");
                 isJumping = true;
                 rbPcSprite.gravityScale = 1.5f;
-                // rbPcSprite.WakeUp();
-                rbPcSprite.velocity = new Vector2(rbPcSprite.velocity.x, jumpingPower);
+            // rbPcSprite.WakeUp();
+                rbPcSprite.AddForce(new Vector2(transform.position.x , jumpingPower));
 
 
                 anim.SetBool("isWalking", false);
@@ -158,7 +160,7 @@ public class PlayerControls : MonoBehaviour
         // rbPcSombra.Sleep();
         // rbPcSprite.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
         // Landing = transform.position.y;
-        anim.SetBool("isJumping", false);
+        anim.SetBool("isJumping", true);
     }
 
     
