@@ -86,10 +86,6 @@ public class PlayerControls : MonoBehaviour
             Debug.Log("pulo");
         }
     }
-    private void Update()
-    {
-        
-    }
     //Movimento
     public void Move(InputAction.CallbackContext context)
     {

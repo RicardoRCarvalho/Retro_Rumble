@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1266474275676456926}
-  m_Layer: 2
+  m_Layer: 9
   m_Name: hitboxPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1266474275988204330}
   - component: {fileID: 1266474275988204329}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: SpriteGroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1266474276123060789}
   - component: {fileID: 1266474276123060790}
   - component: {fileID: 1266474276123060784}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 1266474276276710228}
   - component: {fileID: 1266474276276710229}
   - component: {fileID: 1266474276276710230}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Sombra
   m_TagString: Ground
   m_Icon: {fileID: 0}
