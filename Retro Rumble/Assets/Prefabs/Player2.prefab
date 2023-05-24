@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1266474276123060790}
   - component: {fileID: 1266474276123060784}
   m_Layer: 8
-  m_Name: Player1
+  m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -159,7 +159,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7834745d8154d944091cf625ae01e799, type: 3}
+  m_Sprite: {fileID: -260052927, guid: 867c1672d4cdd5548a6c433023b508b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -187,7 +187,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.54, y: 3.97}
+    oldSize: {x: 1.85, y: 4.77}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -362,6 +362,9 @@ MonoBehaviour:
   enemiesGround:
     serializedVersion: 2
     m_Bits: 8
+  timeToPeak: 0.5
+  timeToFall: 1
+  jumpTimer: 0
 --- !u!95 &1266474276123060784
 Animator:
   serializedVersion: 5
