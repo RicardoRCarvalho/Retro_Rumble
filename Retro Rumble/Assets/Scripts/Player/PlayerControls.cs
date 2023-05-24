@@ -18,10 +18,12 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] GameObject Player;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform groundCheck;
+
     //Movimento
     private float horizontal;
     private float vertical;
     bool facingRight;
+
     //Variaveis de animação
     private Animator anim;
     private bool isWalking;
@@ -34,9 +36,7 @@ public class PlayerControls : MonoBehaviour
 
     [Header("Jump")]
     private bool isGrounded;
-    [SerializeField] float timeToPeak = 0.5f;
-    [SerializeField] float timeToFall = 1f;
-    [SerializeField] float jumpTimer = 0f;
+
 
     #region PlayerMovement
 
@@ -48,11 +48,10 @@ public class PlayerControls : MonoBehaviour
     //Atualiza de acordo com o editor
     private void FixedUpdate()
     {
+
+    
+
         
-        if(!isGrounded)
-        {
-            onAir();
-        }
 
         
         //Acabar com a animação de ataque
@@ -101,23 +100,39 @@ public class PlayerControls : MonoBehaviour
             vertical = context.ReadValue<Vector2>().y;
 
 
-            rbPcSprite.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
-
-
-            rbPcSombra.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
 
 
             Flip(horizontal);
             if (isGrounded)
             {
+
+                rbPcSombra.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
+                rbPcSprite.velocity = rbPcSombra.velocity;
                 anim.SetBool("isWalking", true);
+
             }
+            else
+            {
+
+                rbPcSombra.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
+                rbPcSprite.velocity = new Vector2(horizontal * hSpeed, rbPcSprite.velocity.y);
+
+                rbPcSprite.gravityScale = 1.5f;
+
+
+
+                anim.SetBool("isJumping", true);
+
+            }
+          
         }
         else
         {
+            
             anim.SetBool("isWalking", false);
-            rbPcSprite.velocity = new Vector2(0, 0);
-            rbPcSombra.velocity = new Vector2(0, 0);
+            rbPcSombra.velocity = new Vector2(0,0);
+            rbPcSprite.velocity = rbPcSombra.velocity;
+
         }
     }
 
@@ -133,7 +148,7 @@ public class PlayerControls : MonoBehaviour
                  
                 isGrounded = false;
                 rbPcSprite.gravityScale = 1.5f;
-            // rbPcSprite.WakeUp();
+             // rbPcSprite.WakeUp();
                 rbPcSprite.AddForce(new Vector2(transform.position.x , jumpingPower));
 
 
@@ -160,14 +175,8 @@ public class PlayerControls : MonoBehaviour
     //Aterrisar no mesmo y que pulou
     private void onAir()
     {
-        
-        rbPcSprite.gravityScale = 1.5f;
-        //  rbPcSprite.gravityScale = 0f;
-        // rbPcSprite.Sleep();
-        // rbPcSombra.Sleep();
-        // rbPcSprite.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
-        // Landing = transform.position.y;
-        anim.SetBool("isJumping", true);
+
+     
     }
 
     

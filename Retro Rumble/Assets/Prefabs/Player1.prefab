@@ -362,9 +362,6 @@ MonoBehaviour:
   enemiesGround:
     serializedVersion: 2
     m_Bits: 8
-  timeToPeak: 0.5
-  timeToFall: 1
-  jumpTimer: 0
 --- !u!95 &1266474276123060784
 Animator:
   serializedVersion: 5
