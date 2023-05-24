@@ -127,7 +127,7 @@ public class PlayerControls : MonoBehaviour
             
             anim.SetBool("isWalking", false);
             rbPcSombra.velocity = new Vector2(0,0);
-            rbPcSprite.velocity = rbPcSombra.velocity;
+            rbPcSprite.velocity = new Vector2(0, rbPcSprite.velocity.y);
 
         }
     }
