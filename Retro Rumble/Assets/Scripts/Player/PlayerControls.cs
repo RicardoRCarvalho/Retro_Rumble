@@ -15,7 +15,6 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float jumpingPower;
 
     [Header("Grounding")]
-    [SerializeField] GameObject Player;
     [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform groundCheck;
 
@@ -37,7 +36,6 @@ public class PlayerControls : MonoBehaviour
     [Header("Jump")]
     private bool isGrounded;
 
-
     #region PlayerMovement
 
     void Start()
@@ -49,29 +47,18 @@ public class PlayerControls : MonoBehaviour
     private void FixedUpdate()
     {
 
-    
-
-        
-
-        
         //Acabar com a animação de ataque
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             anim.SetBool("isAttacking", false);
         }
-        //  if (isAttacking)
-        // {
-        //     anim.SetBool("isAttacking", true);
-        //  }
-        //  else
-        //  {
-        //      anim.SetBool("isAttacking", false);
-        //   }
+       
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+
             anim.SetBool("isJumping", false);
             Debug.Log("Pousou");
             isGrounded = true;
@@ -95,10 +82,8 @@ public class PlayerControls : MonoBehaviour
             horizontal = context.ReadValue<Vector2>().x;
             vertical = context.ReadValue<Vector2>().y;
 
-
-
-
             Flip(horizontal);
+
             if (isGrounded)
             {
 
@@ -168,12 +153,6 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    //Aterrisar no mesmo y que pulou
-    private void onAir()
-    {
-
-     
-    }
 
     
     #endregion
@@ -193,12 +172,12 @@ public class PlayerControls : MonoBehaviour
             Debug.Log("HitEnemy");
         }
     }
-
-    private void OnDrawGizmos()
+    public void knockUpAttack()
     {
-        Gizmos.DrawWireSphere(hitboxPoint.transform.position, radiusHitbox);
 
     }
+
+   
     #endregion
 
 }
