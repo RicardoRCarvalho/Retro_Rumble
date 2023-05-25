@@ -13,13 +13,13 @@ public class inimigoBasic : MonoBehaviour
         [Header("Player Settings")]
         [SerializeField] float vSpeed;
         [SerializeField] float hSpeed;
-        [SerializeField] float jumpingPower;
+    [SerializeField] float jumpingPower;
 
-        [Header("Grounding")]
-        //Movimento
-        private float horizontal;
-        private float vertical;
-        bool facingRight;
+    [Header("Grounding")]
+  //Movimento
+    private float horizontal;
+    private float vertical;
+    bool facingRight;
 
     //Variaveis de animação
     private Animator anim;
@@ -40,11 +40,15 @@ public class inimigoBasic : MonoBehaviour
 
     }
 
-
-
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Hitbox"))
+        {
+            Debug.Log("HitEnemy");
+
+        }
+
 
     }
+
 }
