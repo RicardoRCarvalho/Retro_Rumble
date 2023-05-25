@@ -31,6 +31,7 @@ public class PlayerControls : MonoBehaviour
     [Header("Hitbox")]
     [SerializeField] GameObject hitboxPoint;
     [SerializeField] float radiusHitbox;
+    [SerializeField] BoxCollider2D hitbox;
     public LayerMask enemiesGround;
 
     [Header("Jump")]

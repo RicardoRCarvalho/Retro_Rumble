@@ -192,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1266474276276710229, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
       propertyPath: m_Mass
-      value: 999
+      value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 1266474276276710230, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
       propertyPath: m_Size.x
@@ -816,7 +816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1266474276276710229, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
       propertyPath: m_Mass
-      value: 99999
+      value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 1266474276276710229, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
       propertyPath: m_BodyType
@@ -841,6 +841,10 @@ PrefabInstance:
     - target: {fileID: 1266474276276710231, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
       propertyPath: m_Name
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022903026801308615, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
