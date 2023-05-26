@@ -27,8 +27,6 @@ public class inimigoBasic : MonoBehaviour
     private bool isAttacking;
 
     //Variaveis de Ataque
-    [SerializeField] GameObject hitboxPoint;
-    [SerializeField] float radiusHitbox;
 
     //pulo
     bool isJumping = false;
@@ -39,8 +37,8 @@ public class inimigoBasic : MonoBehaviour
         anim = GetComponent<Animator>();
 
     }
-
-    void OnCollisionEnter2D(Collision2D collision)
+    #region On Hit
+    void OnTriggerEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Hitbox"))
         {
@@ -50,5 +48,5 @@ public class inimigoBasic : MonoBehaviour
 
 
     }
-
+    #endregion
 }

@@ -69,7 +69,7 @@ public class PlayerControls : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = false;
+            
             Debug.Log("pulo");
         }
     }
@@ -108,13 +108,19 @@ public class PlayerControls : MonoBehaviour
             }
           
         }
-        else
+        else if(!isGrounded)
         {
             
             anim.SetBool("isWalking", false);
             rbPcSombra.velocity = new Vector2(0,0);
             rbPcSprite.velocity = new Vector2(0, rbPcSprite.velocity.y);
 
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+            rbPcSombra.velocity = new Vector2(0, 0);
+            rbPcSprite.velocity = new Vector2(0, 0);
         }
     }
 
@@ -165,18 +171,8 @@ public class PlayerControls : MonoBehaviour
       
 
     }
-    public void basicAttack()
-    {
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(hitboxPoint.transform.position, radiusHitbox, enemiesGround);
-        foreach (Collider2D enemyGameOBject in enemy)
-        {
-            Debug.Log("HitEnemy");
-        }
-    }
-    public void knockUpAttack()
-    {
 
-    }
+
 
    
     #endregion

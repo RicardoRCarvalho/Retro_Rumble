@@ -349,7 +349,7 @@
 -r:"Library/Bee/artifacts/2000b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aEDbg.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Inimigos/inimigoBasic.cs"
-"Assets/Scripts/Player/HitBox.cs"
+"Assets/Scripts/Player/PlayerAttack.cs"
 "Assets/Scripts/Player/PlayerControls.cs"
 -langversion:9.0
 
