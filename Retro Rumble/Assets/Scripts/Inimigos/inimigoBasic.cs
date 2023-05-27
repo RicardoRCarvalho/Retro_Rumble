@@ -38,9 +38,9 @@ public class inimigoBasic : MonoBehaviour
 
     }
     #region On Hit
-    void OnTriggerEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collision2D other)
     {
-        if (collision.gameObject.CompareTag("Hitbox"))
+        if (other.gameObject.CompareTag("Hitbox"))
         {
             Debug.Log("HitEnemy");
 
