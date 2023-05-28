@@ -7,12 +7,11 @@ public class inimigoBasic : MonoBehaviour
 
    
 
-        [Header("Player Component References")]
-        [SerializeField] Rigidbody2D rb;
-
-        [Header("Player Settings")]
-        [SerializeField] float vSpeed;
-        [SerializeField] float hSpeed;
+    [Header("Player Component References")]
+    [SerializeField] Rigidbody2D rb;
+    [Header("Player Settings")]
+    [SerializeField] float vSpeed;
+    [SerializeField] float hSpeed;
     [SerializeField] float jumpingPower;
 
     [Header("Grounding")]
@@ -35,7 +34,6 @@ public class inimigoBasic : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-
     }
     #region On Hit
     void OnTriggerEnter2D(Collision2D other)

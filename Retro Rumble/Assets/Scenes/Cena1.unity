@@ -132,11 +132,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1266474275676456927, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1266474275676456927, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
       propertyPath: m_TagString
       value: Hitbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266474275988204331, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1266474276123060785, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
       propertyPath: m_RootOrder
@@ -182,6 +186,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1266474276123060787, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1266474276123060789, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
       propertyPath: m_DefaultControlScheme
       value: Keyboard&Mouse
@@ -189,6 +197,10 @@ PrefabInstance:
     - target: {fileID: 1266474276123060791, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
       propertyPath: m_Name
       value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266474276123060791, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1266474276276710228, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
       propertyPath: m_DrawMode
@@ -780,6 +792,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1266474275676456927, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266474275676456927, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
       propertyPath: m_TagString
       value: Hitbox
       objectReference: {fileID: 0}
@@ -842,6 +858,14 @@ PrefabInstance:
     - target: {fileID: 1266474276123060785, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266474276123060787, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1266474276123060790, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
+      propertyPath: hSpeed
+      value: 2.9
       objectReference: {fileID: 0}
     - target: {fileID: 1266474276123060791, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
       propertyPath: m_Name

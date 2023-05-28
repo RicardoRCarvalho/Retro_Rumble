@@ -82,7 +82,7 @@ public class PlayerControls : MonoBehaviour
 
             horizontal = context.ReadValue<Vector2>().x;
             vertical = context.ReadValue<Vector2>().y;
-
+            anim.SetBool("isWalking", true);
             Flip(horizontal);
 
             if (isGrounded)
@@ -140,7 +140,7 @@ public class PlayerControls : MonoBehaviour
                 rbPcSprite.AddForce(new Vector2(transform.position.x , jumpingPower));
 
 
-                anim.SetBool("isWalking", false);
+
                 anim.SetBool("isJumping", true);
      
             
