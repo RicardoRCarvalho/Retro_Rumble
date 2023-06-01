@@ -168,13 +168,17 @@ public class PlayerControls : MonoBehaviour
     {
 
         anim.SetBool("isAttacking", true);
+
       
 
+    }
+    public void AnimationEnd()
+    {
+        anim.SetBool("isAttacking", false);
     }
 
 
 
-   
     #endregion
 
 }
