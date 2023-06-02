@@ -34,6 +34,9 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] BoxCollider2D hitbox;
     public LayerMask enemiesGround;
 
+    [Header("Hitbox")]
+    private int Combo=0;
+
     [Header("Jump")]
     private bool isGrounded;
 
@@ -47,12 +50,15 @@ public class PlayerControls : MonoBehaviour
     //Atualiza de acordo com o editor
     private void FixedUpdate()
     {
-
+         if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+         {
+            Combo = 0;
+         }
         //Acabar com a animação de ataque
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-        {
-            anim.SetBool("isAttacking", false);
-        }
+       // if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+       // {
+       //     anim.SetBool("isAttacking", false);
+      //  }
        
     }
     void OnCollisionEnter2D(Collision2D collision)
@@ -110,7 +116,6 @@ public class PlayerControls : MonoBehaviour
         }
         else if(!isGrounded)
         {
-            
             anim.SetBool("isWalking", false);
             rbPcSombra.velocity = new Vector2(0,0);
             rbPcSprite.velocity = new Vector2(0, rbPcSprite.velocity.y);
@@ -163,18 +168,51 @@ public class PlayerControls : MonoBehaviour
 
     
     #endregion
+    //mudei bastante coisa aqui, tentativa de fazer as strings funcionarem. porem a transição ta foda
     #region PlayerAttack
-    public void Attack(InputAction.CallbackContext context) 
+    public void Attack(InputAction.CallbackContext context)
     {
+        if (context.performed)
+        {
+            Debug.Log("botao");
+            if (anim.GetBool("attack2String1") && Combo == 2)
+            {
+                anim.SetBool("attack3String1", true);
+                Combo = 0;
+                Debug.Log("combo=0");
+            }
+            else if (anim.GetBool("attack1String1") && Combo == 1)
+            {
+                anim.SetBool("attack2String1", true);
+                Combo = 2;
+                Debug.Log("combo=2");
+            }
+            else
+            {
+                anim.SetBool("attack1String1", true);
+                Combo = 1;
+                Debug.Log("combo=1");
+            }
 
-        anim.SetBool("isAttacking", true);
-
-      
-
+        }
     }
     public void AnimationEnd()
     {
-        anim.SetBool("isAttacking", false);
+        if(anim.GetBool("attack1String1"))
+        {
+            anim.SetBool("attack1String1", false);
+        }
+        if (anim.GetBool("attack2String1"))
+        {
+            anim.SetBool("attack2String1", false);
+        }
+        if (anim.GetBool("attack3String1"))
+        {
+            anim.SetBool("attack3String1", false);
+        }
+        // 
+        // anim.SetBool("attack2String1", false);
+        // anim.SetBool("attack3String1", false);
     }
 
 
