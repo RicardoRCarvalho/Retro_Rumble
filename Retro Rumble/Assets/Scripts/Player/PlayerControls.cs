@@ -50,10 +50,10 @@ public class PlayerControls : MonoBehaviour
     //Atualiza de acordo com o editor
     private void FixedUpdate()
     {
-         if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
-         {
-            Combo = 0;
-         }
+       // if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        // {
+        //    Combo = 0;
+       //  }
         //Acabar com a animação de ataque
        // if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
        // {
@@ -172,33 +172,37 @@ public class PlayerControls : MonoBehaviour
     #region PlayerAttack
     public void Attack(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed )
         {
-            Debug.Log("botao");
-            if (anim.GetBool("attack2String1") && Combo == 2)
-            {
-                anim.SetBool("attack3String1", true);
-                Combo = 0;
-                Debug.Log("combo=0");
-            }
-            else if (anim.GetBool("attack1String1") && Combo == 1)
-            {
-                anim.SetBool("attack2String1", true);
-                Combo = 2;
-                Debug.Log("combo=2");
-            }
-            else
-            {
-                anim.SetBool("attack1String1", true);
-                Combo = 1;
-                Debug.Log("combo=1");
-            }
+            Attack_String();
 
+        }
+    }
+    private void Attack_String()
+    {
+        Debug.Log("botaoataque");
+        if (C)
+        {
+            anim.SetBool("attack3String1", true);
+            Combo = 0;
+           
+        }
+        else if (Combo=1)
+        {
+            anim.SetBool("attack2String1", true);
+            Combo = 2;
+            Debug.Log("combo=2");
+        }
+        else if(this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || this.anim.GetCurrentAnimatorStateInfo(0).IsName("RunPlayer1"))
+        {
+            anim.SetBool("attack1String1", true);
+            Combo = 1;
+            Debug.Log("combo=1");
         }
     }
     public void AnimationEnd()
     {
-        if(anim.GetBool("attack1String1"))
+        if(Combo=1)
         {
             anim.SetBool("attack1String1", false);
         }
@@ -206,7 +210,7 @@ public class PlayerControls : MonoBehaviour
         {
             anim.SetBool("attack2String1", false);
         }
-        if (anim.GetBool("attack3String1"))
+        if (anim.GetBool("attack3String1")  )
         {
             anim.SetBool("attack3String1", false);
         }
