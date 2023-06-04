@@ -12,10 +12,14 @@ public class FighterEnemy : EnemyController
 
     private float target1Distance;
     private float target2Distance;
+
+
+    [SerializeField]Rigidbody2D rigidbody;
+    private float Knockback = 100;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rigidbody.gravityScale = 0f;
     }
 
     // Update is called once per frame
@@ -58,4 +62,13 @@ public class FighterEnemy : EnemyController
         }
         transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
+
+    public void BASIC_STUN()
+    {
+
+        Debug.Log("ENEMY_BasicStun");
+       // rigidbody.gravityScale = 1.5f;
+        rigidbody.AddForce(new Vector2(Knockback, 0));
+    }
+    
 }
