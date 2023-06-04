@@ -56,10 +56,9 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Inimigos\inimigoBasic.cs" />
-    <Compile Include="Assets\Scripts\Player\State.cs" />
+    <Compile Include="Assets\Scripts\Inimigos\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControls.cs" />
-    <Compile Include="Assets\Scripts\Player\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\Inimigos\FighterEnemy.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
   </ItemGroup>
   <ItemGroup>
