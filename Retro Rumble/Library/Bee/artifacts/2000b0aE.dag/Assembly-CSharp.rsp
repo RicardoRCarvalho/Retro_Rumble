@@ -352,8 +352,6 @@
 "Assets/Scripts/Inimigos/FighterEnemy.cs"
 "Assets/Scripts/Player/PlayerAttack.cs"
 "Assets/Scripts/Player/PlayerControls.cs"
-"Assets/Scripts/Player/State.cs"
-"Assets/Scripts/Player/StateMachine.cs"
 -langversion:9.0
 
 /deterministic
