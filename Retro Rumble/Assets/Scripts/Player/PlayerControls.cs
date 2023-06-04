@@ -182,13 +182,21 @@ public class PlayerControls : MonoBehaviour
     private void Attack_String()
     {
         Debug.Log("botaoataque");
+<<<<<<< Updated upstream
         if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
+=======
+        if (Combo==2)
+>>>>>>> Stashed changes
         {
             anim.SetBool("attack3String1", true);
             
            
         }
+<<<<<<< Updated upstream
         else if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
+=======
+        else if (Combo==1)
+>>>>>>> Stashed changes
         {
             anim.SetBool("attack2String1", true);
             
@@ -203,7 +211,12 @@ public class PlayerControls : MonoBehaviour
     }
     public void Attack1End()
     {
+<<<<<<< Updated upstream
        
+=======
+        if(Combo==1)
+        {
+>>>>>>> Stashed changes
             anim.SetBool("attack1String1", false);
         
     }
