@@ -16,6 +16,9 @@ C:/Retro_Rumble/Retro Rumble
 Logs/AssetImportWorker1.log
 -srvPort
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 58571
 Successfully changed project path to: C:/Users/Pedro Henrique/Documents/GitHub/Retro_Rumble/Retro Rumble
 C:/Users/Pedro Henrique/Documents/GitHub/Retro_Rumble/Retro Rumble
@@ -54,17 +57,23 @@ C:/Retro_Rumble/Retro Rumble
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 Player connection [7284] Host "[IP] 192.168.15.91 [Port] 0 [Flags] 2 [Guid] 3081775620 [EditorId] 3081775620 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-84EBUBI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [7284] Host "[IP] 192.168.15.91 [Port] 0 [Flags] 2 [Guid] 3081775620 [EditorId] 3081775620 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-84EBUBI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 64.99 ms, found 4 plugins.
+<<<<<<< Updated upstream
 =======
 Player connection [7024] Host "[IP] 192.168.0.196 [Port] 0 [Flags] 2 [Guid] 587286852 [EditorId] 587286852 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-76EV9TO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [7024] Host "[IP] 192.168.0.196 [Port] 0 [Flags] 2 [Guid] 587286852 [EditorId] 587286852 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-76EV9TO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 106.48 ms, found 4 plugins.
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
@@ -97,6 +106,7 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (477ms)
 		BeginReloadAssembly (64ms)
+<<<<<<< Updated upstream
 =======
 Mono path[0] = 'D:/Unity Hub Editor/2021.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Hub Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
@@ -117,6 +127,8 @@ Domain Reload Profiling:
 	ReloadAssembly (910ms)
 		BeginReloadAssembly (143ms)
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
@@ -130,6 +142,7 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (22ms)
 			SetupLoadedEditorAssemblies (200ms)
+<<<<<<< Updated upstream
 =======
 			CreateAndSetChildDomain (2ms)
 		EndReloadAssembly (650ms)
@@ -144,15 +157,23 @@ Domain Reload Profiling:
 				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
 <<<<<<< Updated upstream
+=======
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+>>>>>>> Stashed changes
 				RefreshPlugins (66ms)
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (92ms)
 				ProcessInitializeOnLoadMethodAttributes (32ms)
+<<<<<<< Updated upstream
 =======
 				RefreshPlugins (118ms)
 				BeforeProcessingInitializeOnLoad (2ms)
 				ProcessInitializeOnLoadAttributes (140ms)
 				ProcessInitializeOnLoadMethodAttributes (88ms)
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -161,9 +182,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Registered in 0.007123 seconds.
 =======
 Registered in 0.016227 seconds.
+>>>>>>> Stashed changes
+=======
+Registered in 0.007123 seconds.
 >>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Retro_Rumble\Retro Rumble\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -171,6 +196,9 @@ Symbol file LoadedFromMemory doesn't match image C:\Retro_Rumble\Retro Rumble\Li
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 Refreshing native plugins compatible for Editor in 64.87 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -178,6 +206,7 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (859ms)
 		BeginReloadAssembly (87ms)
+<<<<<<< Updated upstream
 =======
 Refreshing native plugins compatible for Editor in 134.83 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -187,11 +216,16 @@ Domain Reload Profiling:
 	ReloadAssembly (1293ms)
 		BeginReloadAssembly (138ms)
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 			CreateAndSetChildDomain (15ms)
 		EndReloadAssembly (689ms)
 			LoadAssemblies (69ms)
@@ -200,6 +234,7 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (42ms)
 			SetupLoadedEditorAssemblies (387ms)
+<<<<<<< Updated upstream
 =======
 			CreateAndSetChildDomain (21ms)
 		EndReloadAssembly (1048ms)
@@ -210,21 +245,29 @@ Domain Reload Profiling:
 			RebuildScriptCaches (56ms)
 			SetupLoadedEditorAssemblies (611ms)
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 				RefreshPlugins (65ms)
 				BeforeProcessingInitializeOnLoad (78ms)
 				ProcessInitializeOnLoadAttributes (210ms)
 				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (6ms)
+<<<<<<< Updated upstream
 =======
 				RefreshPlugins (135ms)
 				BeforeProcessingInitializeOnLoad (107ms)
 				ProcessInitializeOnLoadAttributes (326ms)
 				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (3ms)
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -240,6 +283,7 @@ Unloading 4082 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 38 unused Assets / (56.4 KB). Loaded Objects now: 4543.
 Memory consumption went from 156.3 MB to 156.3 MB.
 Total: 2.552900 ms (FindLiveObjects: 0.234800 ms CreateObjectMapping: 0.100200 ms MarkObjects: 2.140200 ms  DeleteObjects: 0.077000 ms)
+<<<<<<< Updated upstream
 =======
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
 Refreshing native plugins compatible for Editor in 0.97 ms, found 4 plugins.
@@ -321,6 +365,8 @@ Unloading 4071 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 23 unused Assets / (24.6 KB). Loaded Objects now: 4546.
 Memory consumption went from 155.3 MB to 155.3 MB.
 Total: 3.167200 ms (FindLiveObjects: 0.330000 ms CreateObjectMapping: 0.089900 ms MarkObjects: 2.718800 ms  DeleteObjects: 0.027400 ms)
+=======
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -333,6 +379,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< Updated upstream
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.008271 seconds.
@@ -1601,4 +1648,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+>>>>>>> Stashed changes
+=======
+Received Import Request.
+  Time since last request: 2016100.689132 seconds.
+  path: Assets/PlayerAnimations/Player1AnimationControler.controller
+  artifactKey: Guid(09bd7cd7a4f4e3a4b94eee5cbc8be19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnimations/Player1AnimationControler.controller using Guid(09bd7cd7a4f4e3a4b94eee5cbc8be19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93db530aa0e2ea3f1019b6f70a539d51') in 0.035671 seconds 
 >>>>>>> Stashed changes

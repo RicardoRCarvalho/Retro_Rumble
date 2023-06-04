@@ -16,6 +16,9 @@ C:/Retro_Rumble/Retro Rumble
 Logs/AssetImportWorker0.log
 -srvPort
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 58571
 Successfully changed project path to: C:/Users/Pedro Henrique/Documents/GitHub/Retro_Rumble/Retro Rumble
 C:/Users/Pedro Henrique/Documents/GitHub/Retro_Rumble/Retro Rumble
@@ -54,17 +57,23 @@ C:/Retro_Rumble/Retro Rumble
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 Player connection [15436] Host "[IP] 192.168.15.91 [Port] 0 [Flags] 2 [Guid] 1077498763 [EditorId] 1077498763 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-84EBUBI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [15436] Host "[IP] 192.168.15.91 [Port] 0 [Flags] 2 [Guid] 1077498763 [EditorId] 1077498763 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-84EBUBI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 66.45 ms, found 4 plugins.
+<<<<<<< Updated upstream
 =======
 Player connection [45288] Host "[IP] 192.168.0.196 [Port] 0 [Flags] 2 [Guid] 3375772656 [EditorId] 3375772656 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-76EV9TO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [45288] Host "[IP] 192.168.0.196 [Port] 0 [Flags] 2 [Guid] 3375772656 [EditorId] 3375772656 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-76EV9TO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 105.62 ms, found 4 plugins.
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
@@ -97,6 +106,7 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (474ms)
 		BeginReloadAssembly (61ms)
+<<<<<<< Updated upstream
 =======
 Mono path[0] = 'D:/Unity Hub Editor/2021.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Hub Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
@@ -117,12 +127,17 @@ Domain Reload Profiling:
 	ReloadAssembly (886ms)
 		BeginReloadAssembly (142ms)
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 		EndReloadAssembly (329ms)
 			LoadAssemblies (60ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -137,6 +152,7 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (93ms)
 				ProcessInitializeOnLoadMethodAttributes (31ms)
+<<<<<<< Updated upstream
 =======
 		EndReloadAssembly (619ms)
 			LoadAssemblies (142ms)
@@ -153,6 +169,8 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (140ms)
 				ProcessInitializeOnLoadMethodAttributes (57ms)
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -160,9 +178,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Registered in 0.005608 seconds.
 =======
 Registered in 0.027832 seconds.
+>>>>>>> Stashed changes
+=======
+Registered in 0.005608 seconds.
 >>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Retro_Rumble\Retro Rumble\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -170,6 +192,9 @@ Symbol file LoadedFromMemory doesn't match image C:\Retro_Rumble\Retro Rumble\Li
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 Refreshing native plugins compatible for Editor in 62.74 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
@@ -189,6 +214,7 @@ Domain Reload Profiling:
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (43ms)
 			SetupLoadedEditorAssemblies (387ms)
+<<<<<<< Updated upstream
 =======
 Refreshing native plugins compatible for Editor in 134.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -210,21 +236,29 @@ Domain Reload Profiling:
 			RebuildScriptCaches (57ms)
 			SetupLoadedEditorAssemblies (612ms)
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 				RefreshPlugins (63ms)
 				BeforeProcessingInitializeOnLoad (76ms)
 				ProcessInitializeOnLoadAttributes (209ms)
 				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (6ms)
+<<<<<<< Updated upstream
 =======
 				RefreshPlugins (135ms)
 				BeforeProcessingInitializeOnLoad (106ms)
 				ProcessInitializeOnLoadAttributes (325ms)
 				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (3ms)
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -240,6 +274,7 @@ Unloading 4082 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 38 unused Assets / (56.4 KB). Loaded Objects now: 4543.
 Memory consumption went from 156.4 MB to 156.3 MB.
 Total: 2.507300 ms (FindLiveObjects: 0.222200 ms CreateObjectMapping: 0.101900 ms MarkObjects: 2.126000 ms  DeleteObjects: 0.056600 ms)
+<<<<<<< Updated upstream
 =======
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.81 ms, found 4 plugins.
@@ -1655,6 +1690,8 @@ Unloading 4072 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 23 unused Assets / (24.6 KB). Loaded Objects now: 4613.
 Memory consumption went from 155.6 MB to 155.6 MB.
 Total: 3.198100 ms (FindLiveObjects: 0.322300 ms CreateObjectMapping: 0.100100 ms MarkObjects: 2.749900 ms  DeleteObjects: 0.025000 ms)
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
