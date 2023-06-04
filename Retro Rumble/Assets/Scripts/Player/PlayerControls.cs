@@ -50,10 +50,11 @@ public class PlayerControls : MonoBehaviour
     //Atualiza de acordo com o editor
     private void FixedUpdate()
     {
-       // if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
-        // {
-        //    Combo = 0;
-       //  }
+        if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        {
+            anim.SetBool("attack2String1", false);
+            anim.SetBool("attack3String1", false);
+        }
         //Acabar com a animação de ataque
        // if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
        // {
@@ -181,44 +182,46 @@ public class PlayerControls : MonoBehaviour
     private void Attack_String()
     {
         Debug.Log("botaoataque");
-        if (C)
+        if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
         {
             anim.SetBool("attack3String1", true);
-            Combo = 0;
+            
            
         }
-        else if (Combo=1)
+        else if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
         {
             anim.SetBool("attack2String1", true);
-            Combo = 2;
+            
             Debug.Log("combo=2");
         }
         else if(this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || this.anim.GetCurrentAnimatorStateInfo(0).IsName("RunPlayer1"))
         {
             anim.SetBool("attack1String1", true);
-            Combo = 1;
+            
             Debug.Log("combo=1");
         }
     }
-    public void AnimationEnd()
+    public void Attack1End()
     {
-        if(Combo=1)
-        {
+       
             anim.SetBool("attack1String1", false);
-        }
-        if (anim.GetBool("attack2String1"))
-        {
-            anim.SetBool("attack2String1", false);
-        }
-        if (anim.GetBool("attack3String1")  )
-        {
-            anim.SetBool("attack3String1", false);
-        }
-        // 
-        // anim.SetBool("attack2String1", false);
-        // anim.SetBool("attack3String1", false);
+        
     }
-
+    public void Attack2End()
+    { 
+     
+            anim.SetBool("attack2String1", false);
+     
+    }
+public void Attack3End()
+{
+  
+        anim.SetBool("attack3String1", false);
+   
+    // 
+    // anim.SetBool("attack2String1", false);
+    // anim.SetBool("attack3String1", false);
+}
 
 
     #endregion
