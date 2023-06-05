@@ -14,34 +14,18 @@ public class FighterEnemy : MonoBehaviour
     private Animator anim;
     private float target1Distance;
     private float target2Distance;
-
-<<<<<<< HEAD
     private int target1EnemiesEngaged;
     private int target2EnemiesEngaged = 0;
-<<<<<<< HEAD
-    private Vector3 targetPosition;
-    private bool hasAttacked;
-=======
-
-    [SerializeField]Rigidbody2D rigidbody;
-    private float Knockback = 100;
->>>>>>> 9402ef5bd42004ffec8542be4c9c9991f9f0d453
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody.gravityScale = 0f;
-=======
-   
-   
-    
         anim = GetComponent<Animator>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(Choice());
+        StartCoroutine(wait());
     }
 
     private void ChasePlayer(GameObject target)
@@ -54,25 +38,15 @@ public class FighterEnemy : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().flipX = true;
         }
-        targetPosition = new Vector3(target.transform.position.x + 2f, target.transform.position.y, 0f);
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-        if (transform.position == targetPosition)
+        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        if (transform.position == target.transform.position)
         {
             anim.SetBool("isWalking", false);
-            if (!hasAttacked)
-            {
-                AttackPlayer(target);
-            }
         }
         else
         {
             anim.SetBool("isWalking", true);
         }
-    }
-
-    private void AttackPlayer(GameObject target)
-    {
-        StartCoroutine(Attack());
     }
 
     private void IAChoice()
@@ -167,37 +141,9 @@ public class FighterEnemy : MonoBehaviour
         Gizmos.DrawWireSphere(target1.transform.position, radius);
     }
 
-    IEnumerator Choice()
+    IEnumerator wait()
     {
         yield return new WaitForSeconds(2);
         IAChoice();
     }
-
-<<<<<<< HEAD
-    IEnumerator Attack()
-    {
-        yield return new WaitForSeconds(1);
-        anim.SetBool("isAttacking", true);
-        StartCoroutine(Attacked());
-        yield return new WaitForSeconds(1);
-        anim.SetBool("isAttacking", false);
-    }
-
-    IEnumerator Attacked()
-    {
-        hasAttacked = true;
-        yield return new WaitForSeconds(4);
-        hasAttacked = false;
-        
-    }
-=======
-    public void BASIC_STUN()
-    {
-
-        Debug.Log("ENEMY_BasicStun");
-       // rigidbody.gravityScale = 1.5f;
-        rigidbody.AddForce(new Vector2(Knockback, 0));
-    }
-    
->>>>>>> 9402ef5bd42004ffec8542be4c9c9991f9f0d453
 }

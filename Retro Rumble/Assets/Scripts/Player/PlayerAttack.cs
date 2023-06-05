@@ -6,8 +6,6 @@ public class PlayerAttack : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("hit");
-        other.GetComponent<FighterEnemy>().BASIC_STUN();
+        Debug.Log("hit");  
     }
-    
 }
