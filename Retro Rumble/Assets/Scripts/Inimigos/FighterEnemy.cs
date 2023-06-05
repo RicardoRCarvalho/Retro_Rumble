@@ -182,12 +182,21 @@ public class FighterEnemy : MonoBehaviour
         hasAttacked = false;
         
     }
+
+    IEnumerator Hit()
+    {
+        rigidbody.AddForce(new Vector2(Knockback, 0));
+        yield return new WaitForSeconds(1);
+        rigidbody.AddForce(new Vector2(-Knockback, 0));
+
+    }
     public void BASIC_STUN()
     {
 
         Debug.Log("ENEMY_BasicStun");
-       // rigidbody.gravityScale = 1.5f;
-        rigidbody.AddForce(new Vector2(Knockback, 0));
+        // rigidbody.gravityScale = 1.5f;
+        StartCoroutine(Hit());
+
     }
     
 }
