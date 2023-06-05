@@ -1164,15 +1164,9 @@ MonoBehaviour:
   speed: 3
   chaseDistance: 3
   stopDistance: 1
-<<<<<<< HEAD
   target1: {fileID: 409903818}
   target2: {fileID: 1004769329}
   rigidbody: {fileID: 1802336759}
-=======
-  radius: 2
-  target1: {fileID: 16046872}
-  target2: {fileID: 833281349}
->>>>>>> 112de550418a5b43034c7c8d7384e11553156d86
 --- !u!95 &1802336758
 Animator:
   serializedVersion: 5

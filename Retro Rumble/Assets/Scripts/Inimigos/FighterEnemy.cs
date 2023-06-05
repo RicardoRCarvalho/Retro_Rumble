@@ -15,25 +15,18 @@ public class FighterEnemy : MonoBehaviour
     private float target1Distance;
     private float target2Distance;
 
-<<<<<<< HEAD
     private int target1EnemiesEngaged;
     private int target2EnemiesEngaged = 0;
-<<<<<<< HEAD
     private Vector3 targetPosition;
     private bool hasAttacked;
-=======
+
 
     [SerializeField]Rigidbody2D rigidbody;
     private float Knockback = 100;
->>>>>>> 9402ef5bd42004ffec8542be4c9c9991f9f0d453
     // Start is called before the first frame update
     void Start()
     {
         rigidbody.gravityScale = 0f;
-=======
-   
-   
-    
         anim = GetComponent<Animator>();
 
     }
@@ -173,7 +166,6 @@ public class FighterEnemy : MonoBehaviour
         IAChoice();
     }
 
-<<<<<<< HEAD
     IEnumerator Attack()
     {
         yield return new WaitForSeconds(1);
@@ -190,7 +182,6 @@ public class FighterEnemy : MonoBehaviour
         hasAttacked = false;
         
     }
-=======
     public void BASIC_STUN()
     {
 
@@ -199,5 +190,4 @@ public class FighterEnemy : MonoBehaviour
         rigidbody.AddForce(new Vector2(Knockback, 0));
     }
     
->>>>>>> 9402ef5bd42004ffec8542be4c9c9991f9f0d453
 }
