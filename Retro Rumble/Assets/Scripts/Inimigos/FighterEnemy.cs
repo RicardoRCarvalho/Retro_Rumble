@@ -10,6 +10,7 @@ public class FighterEnemy : MonoBehaviour
     public float radius;
     public GameObject target1;
     public GameObject target2;
+    public Material flashMaterial;
 
     private Animator anim;
     private float target1Distance;
@@ -21,6 +22,17 @@ public class FighterEnemy : MonoBehaviour
     private bool hasAttacked;
 
 
+    // The SpriteRenderer that should flash.
+    private SpriteRenderer spriteRenderer;
+        
+    // The material that was in use, when the script started.
+    private Material originalMaterial;
+
+
+    // The currently running coroutine.
+    private Coroutine flashRoutine;
+
+
     [SerializeField]Rigidbody2D rigidbody;
     private float Knockback = 100;
     // Start is called before the first frame update
@@ -28,6 +40,8 @@ public class FighterEnemy : MonoBehaviour
     {
         rigidbody.gravityScale = 0f;
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalMaterial = spriteRenderer.material;
 
     }
 
@@ -196,7 +210,30 @@ public class FighterEnemy : MonoBehaviour
         Debug.Log("ENEMY_BasicStun");
         // rigidbody.gravityScale = 1.5f;
         StartCoroutine(Hit());
+        if (flashRoutine != null)
+        {
+            // In this case, we should stop it first.
+            // Multiple FlashRoutines the same time would cause bugs.
+            StopCoroutine(flashRoutine);
+        }
+
+        // Start the Coroutine, and store the reference for it.
+        flashRoutine = StartCoroutine(FlashRoutine());
 
     }
     
+    IEnumerator FlashRoutine()
+        {
+            // Swap to the flashMaterial.
+            spriteRenderer.material = flashMaterial;
+
+            // Pause the execution of this function for "0.125" seconds.
+            yield return new WaitForSeconds(0.125f);
+
+            // After the pause, swap back to the original material.
+            spriteRenderer.material = originalMaterial;
+
+            // Set the routine to null, signaling that it's finished.
+            flashRoutine = null;
+        }
 }

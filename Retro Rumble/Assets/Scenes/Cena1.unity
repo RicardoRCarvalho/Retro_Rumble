@@ -1207,10 +1207,11 @@ MonoBehaviour:
   radius: 2
   target1: {fileID: 16046872}
   target2: {fileID: 833281349}
+  flashMaterial: {fileID: 2100000, guid: fd52694ab86286b4b9c432d0cc37f5b9, type: 2}
   rigidbody: {fileID: 1802336759}
 --- !u!95 &1802336758
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1227,7 +1228,8 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!50 &1802336759
 Rigidbody2D:
   serializedVersion: 4
