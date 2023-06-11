@@ -8,6 +8,7 @@ public class FighterEnemy : MonoBehaviour
     public float chaseDistance;
     public float stopDistance;
     public float radius;
+    public int life;
     public GameObject target1;
     public GameObject target2;
     public Material flashMaterial;
@@ -49,6 +50,11 @@ public class FighterEnemy : MonoBehaviour
     void Update()
     {
         StartCoroutine(Choice());
+        if (life <= 0)
+        {
+            anim.SetBool("isFalling", true);
+            StartCoroutine(Destroy());
+        }
     }
 
     private void ChasePlayer(GameObject target)
@@ -167,6 +173,16 @@ public class FighterEnemy : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("collision");
+        if (collision.gameObject.CompareTag("Power"))
+        {
+            BASIC_STUN();
+        }
+    }
+
     void OnDrawGizmos()
     {
         // Draw a yellow sphere at the transform's position
@@ -224,6 +240,7 @@ public class FighterEnemy : MonoBehaviour
     
     IEnumerator FlashRoutine()
         {
+            life -= 1;
             // Swap to the flashMaterial.
             spriteRenderer.material = flashMaterial;
 
@@ -236,4 +253,10 @@ public class FighterEnemy : MonoBehaviour
             // Set the routine to null, signaling that it's finished.
             flashRoutine = null;
         }
+    
+    IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
+    }
 }

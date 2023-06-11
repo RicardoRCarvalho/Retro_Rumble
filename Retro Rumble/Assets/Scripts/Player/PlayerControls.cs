@@ -40,6 +40,10 @@ public class PlayerControls : MonoBehaviour
     [Header("Jump")]
     private bool isGrounded;
 
+    [Header("PowerUp")]
+    public PowerUpController powerUp;
+    public bool hasShot;
+
     #region PlayerMovement
 
     void Start()
@@ -135,7 +139,6 @@ public class PlayerControls : MonoBehaviour
     //Pulo
     public void Jump(InputAction.CallbackContext context)
     {
-
         if (context.performed && isGrounded)
         {
 
@@ -166,7 +169,15 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-
+    //Especial
+    public void Special(InputAction.CallbackContext context)
+    {
+        if (!hasShot)
+        {
+            powerUp.PowerAttack(!facingRight);
+            StartCoroutine(Shooted());
+        }
+    }
     
     #endregion
     //mudei bastante coisa aqui, tentativa de fazer as strings funcionarem. porem a transição ta foda
@@ -232,4 +243,10 @@ public class PlayerControls : MonoBehaviour
 
     #endregion
 
+    IEnumerator Shooted()
+    {
+        hasShot = true;
+        yield return new WaitForSeconds(2);
+        hasShot = false;
+    }
 }

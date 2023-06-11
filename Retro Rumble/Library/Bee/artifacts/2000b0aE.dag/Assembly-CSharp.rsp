@@ -352,6 +352,8 @@
 "Assets/Scripts/Inimigos/FighterEnemy.cs"
 "Assets/Scripts/Player/PlayerAttack.cs"
 "Assets/Scripts/Player/PlayerControls.cs"
+"Assets/Scripts/Player/Power.cs"
+"Assets/Scripts/Player/PowerUpController.cs"
 -langversion:9.0
 
 /deterministic
