@@ -12,6 +12,7 @@ public class FighterEnemy : MonoBehaviour
     public GameObject target1;
     public GameObject target2;
     public Material flashMaterial;
+    public GameObject powerExplosion;
 
     private Animator anim;
     private float target1Distance;
@@ -176,9 +177,9 @@ public class FighterEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("collision");
         if (collision.gameObject.CompareTag("Power"))
         {
+            StartCoroutine(Explosion());
             BASIC_STUN();
         }
     }
@@ -258,5 +259,13 @@ public class FighterEnemy : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Destroy(gameObject);
+    }
+
+    IEnumerator Explosion()
+    {
+        GameObject explosionObject = Instantiate(powerExplosion);
+        explosionObject.transform.position = new Vector3 (transform.position.x - 1.5f, transform.position.y + 2f, 0);
+        yield return new WaitForSeconds(0.4f);
+        Destroy(explosionObject);
     }
 }

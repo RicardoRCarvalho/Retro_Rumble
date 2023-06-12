@@ -172,7 +172,7 @@ public class PlayerControls : MonoBehaviour
     //Especial
     public void Special(InputAction.CallbackContext context)
     {
-        if (!hasShot)
+        if (!hasShot && isGrounded)
         {
             powerUp.PowerAttack(!facingRight);
             StartCoroutine(Shooted());
