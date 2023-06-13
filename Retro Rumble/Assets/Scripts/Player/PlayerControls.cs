@@ -243,6 +243,11 @@ public class PlayerControls : MonoBehaviour
 
     #endregion
 
+    public void Damage()
+    {
+        Debug.Log("damage");
+    }
+
     IEnumerator Shooted()
     {
         hasShot = true;
