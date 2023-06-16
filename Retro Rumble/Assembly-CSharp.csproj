@@ -59,7 +59,11 @@
     <Compile Include="Assets\Scripts\Inimigos\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\Player\Power.cs" />
+    <Compile Include="Assets\Scripts\Player\PortraitController.cs" />
+    <Compile Include="Assets\Scripts\Inimigos\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Inimigos\BossEnemy.cs" />
     <Compile Include="Assets\Scripts\Player\PowerUpController.cs" />
+    <Compile Include="Assets\Scripts\Inimigos\SkeletonEnemy.cs" />
     <Compile Include="Assets\Scripts\Inimigos\FighterEnemy.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Inimigos\EnemyHitbox.cs" />
