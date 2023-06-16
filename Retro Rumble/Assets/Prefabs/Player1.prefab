@@ -390,6 +390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbPcSprite: {fileID: 1266474276123060788}
   rbPcSombra: {fileID: 1266474276276710229}
+  player: {fileID: 0}
   vSpeed: 1.7
   hSpeed: 2.9
   jumpingPower: 1000
@@ -397,12 +398,22 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCheck: {fileID: 1266474275988204330}
+  isOnTop: 0
   hitboxPoint: {fileID: 1266474275676456927}
   radiusHitbox: 0.43
   hitbox: {fileID: 0}
   enemiesGround:
     serializedVersion: 2
     m_Bits: 8
+  powerUp: {fileID: 0}
+  hasShot: 0
+  mana: 0
+  life: 0
+  flashMaterial: {fileID: 0}
+  bulletExplosion: {fileID: 0}
+  portrait: {fileID: 0}
+  HP: {fileID: 0}
+  MP: {fileID: 0}
 --- !u!95 &1266474276123060784
 Animator:
   serializedVersion: 5
@@ -436,6 +447,7 @@ GameObject:
   - component: {fileID: 1266474276276710229}
   - component: {fileID: 1266474276276710230}
   - component: {fileID: 1702926224636794746}
+  - component: {fileID: 8197894185070450582}
   m_Layer: 8
   m_Name: Sombra
   m_TagString: Ground
@@ -557,3 +569,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8197894185070450582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266474276276710231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b711de68251dd545a5602734b9ee89e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerControls: {fileID: 1266474276123060790}

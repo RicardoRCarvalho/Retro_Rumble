@@ -348,6 +348,7 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/Camera/CameraController.cs"
 "Assets/Scripts/Inimigos/BossEnemy.cs"
 "Assets/Scripts/Inimigos/Bullet.cs"
 "Assets/Scripts/Inimigos/EnemyController.cs"
@@ -359,6 +360,7 @@
 "Assets/Scripts/Player/PortraitController.cs"
 "Assets/Scripts/Player/Power.cs"
 "Assets/Scripts/Player/PowerUpController.cs"
+"Assets/Scripts/Player/ShadowController.cs"
 -langversion:9.0
 
 /deterministic

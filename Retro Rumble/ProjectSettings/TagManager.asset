@@ -9,6 +9,7 @@ TagManager:
   - Hitbox
   - Power
   - Bullet
+  - Collider
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Water
   - UI
   - groundLayer
-  - 
+  - collider
   - Player1
   - Player2
   - 

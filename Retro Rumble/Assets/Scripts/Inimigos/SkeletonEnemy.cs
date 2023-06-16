@@ -10,7 +10,9 @@ public class SkeletonEnemy : MonoBehaviour
     public float radius;
     public int life;
     public GameObject target1;
+    public PlayerControls playerControls1;
     public GameObject target2;
+    public PlayerControls playerControls2;
     public Material flashMaterial;
     public GameObject powerExplosion;
 
@@ -93,9 +95,13 @@ public class SkeletonEnemy : MonoBehaviour
     {
         target1Distance = Vector2.Distance(transform.position, target1.transform.position);
         target2Distance = Vector2.Distance(transform.position, target2.transform.position);
-        if (GameObject.Find("Player2") == null)
+        if (playerControls2.life <= 0)
         {
             ChasePlayer(target1);
+        }
+        else if (playerControls1.life <= 0)
+        {
+            ChasePlayer(target2);
         }
         else
         {

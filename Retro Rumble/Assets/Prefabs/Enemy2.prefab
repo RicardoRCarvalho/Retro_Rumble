@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5709179879436655742}
   m_Layer: 0
   m_Name: Enemy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,7 +154,9 @@ MonoBehaviour:
   radius: 2
   life: 3
   target1: {fileID: 0}
+  playerControls1: {fileID: 1266474276123060790, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
   target2: {fileID: 0}
+  playerControls2: {fileID: 1266474276123060790, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
   flashMaterial: {fileID: 2100000, guid: fd52694ab86286b4b9c432d0cc37f5b9, type: 2}
   powerExplosion: {fileID: 7285296133086624567, guid: 736737859f7ab8f49be08cdf43d850e5, type: 3}
   rigidbody: {fileID: 5709179879436655742}
@@ -189,6 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5001346533235863906}
   - component: {fileID: 5087242416214582471}
+  - component: {fileID: 998995599730502254}
   m_Layer: 0
   m_Name: Hitbox
   m_TagString: Untagged
@@ -237,3 +240,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97526246, y: 0.38156208}
   m_EdgeRadius: 0
+--- !u!114 &998995599730502254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5890145167197715981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541c41eca9de66f4db7ed03daa630370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 5709179879436655741}

@@ -8,6 +8,7 @@ public class PlayerControls : MonoBehaviour
     [Header("Player Component References")]
     [SerializeField] Rigidbody2D rbPcSprite;
     [SerializeField] Rigidbody2D rbPcSombra;
+    public GameObject player;
 
     [Header("Player Settings")]
     [SerializeField] float vSpeed;
@@ -22,6 +23,7 @@ public class PlayerControls : MonoBehaviour
     private float horizontal;
     private float vertical;
     bool facingRight;
+    public bool isOnTop = false;
 
     //Variaveis de animação
     private Animator anim;
@@ -83,7 +85,16 @@ public class PlayerControls : MonoBehaviour
         }
         if (life <= 0)
         {
-            anim.SetBool("death", true);
+            StartCoroutine(Death());
+
+        }
+        if(isOnTop)
+        {
+            Debug.Log(vertical);
+            if(vertical > 0)
+            {
+                rbPcSprite.velocity = new Vector2(rbPcSombra.velocity.x, 0f);
+            }
         }
         //Acabar com a animação de ataque
        // if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
@@ -94,7 +105,10 @@ public class PlayerControls : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("hit");
+        if (collision.gameObject.CompareTag("Collider"))
+        {
+            Debug.Log("collider");
+        }
         if (collision.gameObject.CompareTag("Ground"))
         {
 
@@ -106,7 +120,6 @@ public class PlayerControls : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Debug.Log("out");
         if (collision.gameObject.CompareTag("Ground"))
         {
             
@@ -137,7 +150,6 @@ public class PlayerControls : MonoBehaviour
 
             if (isGrounded)
             {
-
                 rbPcSombra.velocity = new Vector2(horizontal * hSpeed, vertical * vSpeed);
                 rbPcSprite.velocity = rbPcSombra.velocity;
                 anim.SetBool("isWalking", true);
@@ -343,5 +355,12 @@ public class PlayerControls : MonoBehaviour
         explosionObject.transform.position = new Vector3 (transform.position.x , transform.position.y, 0);
         yield return new WaitForSeconds(0.4f);
         Destroy(explosionObject);
+    }
+
+    IEnumerator Death()
+    {
+        anim.SetBool("death", true);
+        yield return new WaitForSeconds(2);
+        this.gameObject.SetActive(false);
     }
 }
