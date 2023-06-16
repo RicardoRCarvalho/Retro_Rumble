@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Hitbox
   - Power
+  - Bullet
   layers:
   - Default
   - TransparentFX

@@ -27,6 +27,7 @@ public class PlayerControls : MonoBehaviour
     private Animator anim;
     private bool isWalking;
     private bool isAttacking;
+    
 
     [Header("Hitbox")]
     [SerializeField] GameObject hitboxPoint;
@@ -43,12 +44,33 @@ public class PlayerControls : MonoBehaviour
     [Header("PowerUp")]
     public PowerUpController powerUp;
     public bool hasShot;
+    public int mana;
+
+    [Header("Damage")]
+    public int life;
+    // The SpriteRenderer that should flash.
+    private SpriteRenderer spriteRenderer;
+        
+    // The material that was in use, when the script started.
+    private Material originalMaterial;
+
+    public Material flashMaterial;
+    // The currently running coroutine.
+    private Coroutine flashRoutine;
+    public GameObject bulletExplosion;
+
+    [Header("HUD")]
+    public PortraitController portrait;
+    public GameObject HP;
+    public GameObject MP;
 
     #region PlayerMovement
 
     void Start()
     {
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalMaterial = spriteRenderer.material;
     }
 
     //Atualiza de acordo com o editor
@@ -59,6 +81,10 @@ public class PlayerControls : MonoBehaviour
             anim.SetBool("attack2String1", false);
             anim.SetBool("attack3String1", false);
         }
+        if (life <= 0)
+        {
+            anim.SetBool("death", true);
+        }
         //Acabar com a animação de ataque
        // if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
        // {
@@ -68,6 +94,7 @@ public class PlayerControls : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("hit");
         if (collision.gameObject.CompareTag("Ground"))
         {
 
@@ -75,15 +102,27 @@ public class PlayerControls : MonoBehaviour
             Debug.Log("Pousou");
             isGrounded = true;
         }
+        
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
+        Debug.Log("out");
         if (collision.gameObject.CompareTag("Ground"))
         {
             
             Debug.Log("pulo");
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            Damage();
+            StartCoroutine(Explosion());
+        }
+    }
+
     //Movimento
     public void Move(InputAction.CallbackContext context)
     {
@@ -172,9 +211,11 @@ public class PlayerControls : MonoBehaviour
     //Especial
     public void Special(InputAction.CallbackContext context)
     {
-        if (!hasShot && isGrounded)
+        if (!hasShot && isGrounded && context.performed && mana >= 50)
         {
             powerUp.PowerAttack(!facingRight);
+            mana -= 50;
+            MP.transform.localScale = new Vector3(mana*0.01f, 1f, 1f);
             StartCoroutine(Shooted());
         }
     }
@@ -246,6 +287,24 @@ public class PlayerControls : MonoBehaviour
     public void Damage()
     {
         Debug.Log("damage");
+        anim.SetBool("damage", true);
+        portrait.PortraitHit();
+        if (flashRoutine != null)
+        {
+            // In this case, we should stop it first.
+            // Multiple FlashRoutines the same time would cause bugs.
+            StopCoroutine(flashRoutine);
+        }
+
+        // Start the Coroutine, and store the reference for it.
+        flashRoutine = StartCoroutine(FlashRoutine());
+
+
+    }
+
+    public void EndDamage()
+    {
+        StartCoroutine(AnimDamage());
     }
 
     IEnumerator Shooted()
@@ -253,5 +312,36 @@ public class PlayerControls : MonoBehaviour
         hasShot = true;
         yield return new WaitForSeconds(2);
         hasShot = false;
+    }
+
+    IEnumerator FlashRoutine()
+        {
+            life -= 10;
+            HP.transform.localScale = new Vector3(life*0.01f, 1f, 1f);
+            // Swap to the flashMaterial.
+            spriteRenderer.material = flashMaterial;
+
+            // Pause the execution of this function for "0.125" seconds.
+            yield return new WaitForSeconds(0.125f);
+
+            // After the pause, swap back to the original material.
+            spriteRenderer.material = originalMaterial;
+
+            // Set the routine to null, signaling that it's finished.
+            flashRoutine = null;
+        }
+
+        IEnumerator AnimDamage()
+    {
+        yield return new WaitForSeconds(0.5f);
+        anim.SetBool("damage", false);
+    }
+
+    IEnumerator Explosion()
+    {
+        GameObject explosionObject = Instantiate(bulletExplosion);
+        explosionObject.transform.position = new Vector3 (transform.position.x , transform.position.y, 0);
+        yield return new WaitForSeconds(0.4f);
+        Destroy(explosionObject);
     }
 }

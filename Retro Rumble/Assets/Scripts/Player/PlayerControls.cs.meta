@@ -3,7 +3,14 @@ guid: 5232e91f513ac2e4fb47cbb51b33ae5f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - rbPcSprite: {instanceID: 0}
+  - rbPcSombra: {instanceID: 0}
+  - groundCheck: {instanceID: 0}
+  - hitboxPoint: {instanceID: 0}
+  - hitbox: {instanceID: 0}
+  - powerUp: {instanceID: 0}
+  - flashMaterial: {fileID: 2100000, guid: fd52694ab86286b4b9c432d0cc37f5b9, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -3,7 +3,12 @@ guid: 5c9a35f8915658549afc74c6e408e1e0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - target1: {instanceID: 0}
+  - target2: {instanceID: 0}
+  - flashMaterial: {fileID: 2100000, guid: fd52694ab86286b4b9c432d0cc37f5b9, type: 2}
+  - powerExplosion: {instanceID: 0}
+  - rigidbody: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

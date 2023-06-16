@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class EnemyHitbox : MonoBehaviour
 {
+    private Animator anim;
+    public GameObject enemy;
+
+    void Start()
+    {
+        anim = enemy.GetComponent<Animator>();
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackFighter1"))
+        {
+            other.GetComponent<PlayerControls>().Damage();
+        }
         
-        other.GetComponent<PlayerControls>().Damage();
     }
 
 }
