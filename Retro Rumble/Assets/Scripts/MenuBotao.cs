@@ -12,6 +12,7 @@ public class MenuBotao : MonoBehaviour
     public Animator anim;
     public static int numPlayers = 1;
     private int selectedButton = 1;
+    public AudioSource camera;
 
     public void UpMenu(InputAction.CallbackContext context)
     {
@@ -36,6 +37,7 @@ public class MenuBotao : MonoBehaviour
         if (context.performed)
         {
             anim.SetTrigger("Click");
+            camera.Play();
         }
     }
 

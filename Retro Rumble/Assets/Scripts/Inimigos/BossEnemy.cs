@@ -27,6 +27,9 @@ public class BossEnemy : MonoBehaviour
     private bool hasAttacked;
     private bool hasShot;
 
+    public AudioSource camera;
+    public AudioClip shootSound;
+
 
     // The SpriteRenderer that should flash.
     private SpriteRenderer spriteRenderer;
@@ -230,6 +233,7 @@ public class BossEnemy : MonoBehaviour
         //yield return new WaitForSeconds(1);
         anim.SetBool("isShooting", true);
         StartCoroutine(Shot());
+        camera.Play();
         GameObject bulletObject = Instantiate(bulletPrefab);
         bulletObject.transform.position = transform.position;
         bulletObject.transform.right = transform.right * -1.0f;
