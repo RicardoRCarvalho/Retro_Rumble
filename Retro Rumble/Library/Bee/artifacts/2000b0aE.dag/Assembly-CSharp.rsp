@@ -353,7 +353,15 @@
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Inimigos/EnemyController.cs"
+<<<<<<< Updated upstream
 "Assets/Scripts/Inimigos/FighterEnemy.cs"
+=======
+"Assets/Scripts/Inimigos/EnemyHitbox.cs"
+"Assets/Scripts/Inimigos/explosion.cs"
+"Assets/Scripts/Inimigos/FighterEnemy.cs"
+"Assets/Scripts/Inimigos/SkeletonEnemy.cs"
+"Assets/Scripts/MenuBotao.cs"
+>>>>>>> Stashed changes
 "Assets/Scripts/Player/PlayerAttack.cs"
 "Assets/Scripts/Player/PlayerControls.cs"
 -langversion:9.0

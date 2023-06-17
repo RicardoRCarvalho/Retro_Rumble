@@ -20,9 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
+<<<<<<< Updated upstream:Retro Rumble/Assets/Artes/Inimigo/AttackFighter1.anim
       value: {fileID: 759243316, guid: 9b15872dfad72b446b2740c6e753e0e8, type: 3}
     - time: 0.2
       value: {fileID: 438630651, guid: 9b15872dfad72b446b2740c6e753e0e8, type: 3}
+=======
+      value: {fileID: 993947371, guid: 00bf48a7be3cc7a47979fc40f071c3d2, type: 3}
+>>>>>>> Stashed changes:Retro Rumble/Assets/Artes/Inimigo/Boss/idle.anim
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,8 +46,12 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
+<<<<<<< Updated upstream:Retro Rumble/Assets/Artes/Inimigo/AttackFighter1.anim
     - {fileID: 759243316, guid: 9b15872dfad72b446b2740c6e753e0e8, type: 3}
     - {fileID: 438630651, guid: 9b15872dfad72b446b2740c6e753e0e8, type: 3}
+=======
+    - {fileID: 993947371, guid: 00bf48a7be3cc7a47979fc40f071c3d2, type: 3}
+>>>>>>> Stashed changes:Retro Rumble/Assets/Artes/Inimigo/Boss/idle.anim
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

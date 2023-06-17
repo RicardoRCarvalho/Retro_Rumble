@@ -10,6 +10,13 @@ public class FighterEnemy : MonoBehaviour
     public float radius;
     public GameObject target1;
     public GameObject target2;
+<<<<<<< Updated upstream
+=======
+    public PlayerControls playerControls2;
+    public Material flashMaterial;
+    public GameObject powerExplosion;
+    public GameObject bg;
+>>>>>>> Stashed changes
 
     private Animator anim;
     private float target1Distance;
@@ -18,6 +25,24 @@ public class FighterEnemy : MonoBehaviour
 <<<<<<< HEAD
     private int target1EnemiesEngaged;
     private int target2EnemiesEngaged = 0;
+<<<<<<< Updated upstream
+=======
+    private Vector3 targetPosition;
+    private bool hasAttacked;
+    private bool asleep = true;
+
+
+    // The SpriteRenderer that should flash.
+    private SpriteRenderer spriteRenderer;
+        
+    // The material that was in use, when the script started.
+    private Material originalMaterial;
+
+
+    // The currently running coroutine.
+    private Coroutine flashRoutine;
+
+>>>>>>> Stashed changes
 
     [SerializeField]Rigidbody2D rigidbody;
     private float Knockback = 100;
@@ -36,7 +61,33 @@ public class FighterEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< Updated upstream
         StartCoroutine(wait());
+=======
+        
+        if (life <= 0)
+        {
+            anim.SetBool("isFalling", true);
+            StartCoroutine(Destroy());
+        }
+        else if (!asleep)
+        {
+            IAChoice();
+        }
+        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(bg.transform.position, new Vector2(19.20f, 10.80f), 0f);
+        int players = 0;
+        foreach (Collider2D hitCollider in hitColliders)
+        {
+            if (hitCollider.tag == "Player")
+            {
+                players += 1;
+            }
+        }
+        if (players != 0)
+        {
+            asleep = false;
+        }
+>>>>>>> Stashed changes
     }
 
     private void ChasePlayer(GameObject target)
@@ -166,4 +217,42 @@ public class FighterEnemy : MonoBehaviour
         rigidbody.AddForce(new Vector2(Knockback, 0));
     }
     
+<<<<<<< Updated upstream
+=======
+    IEnumerator FlashRoutine()
+        {
+            life -= 1;
+            // Swap to the flashMaterial.
+            spriteRenderer.material = flashMaterial;
+
+            // Pause the execution of this function for "0.125" seconds.
+            yield return new WaitForSeconds(0.125f);
+
+            // After the pause, swap back to the original material.
+            spriteRenderer.material = originalMaterial;
+
+            // Set the routine to null, signaling that it's finished.
+            flashRoutine = null;
+        }
+    
+    IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
+    }
+
+    IEnumerator Explosion()
+    {
+        GameObject explosionObject = Instantiate(powerExplosion);
+        explosionObject.transform.position = new Vector3 (transform.position.x - 1.5f, transform.position.y + 2f, 0);
+        yield return new WaitForSeconds(0.4f);
+        Destroy(explosionObject);
+    }
+
+    IEnumerator Choice()
+    {
+        yield return new WaitForSeconds(2);
+        IAChoice();
+    }
+>>>>>>> Stashed changes
 }
