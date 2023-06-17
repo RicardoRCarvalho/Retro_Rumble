@@ -52,11 +52,16 @@ public class FighterEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(Choice());
+        
         if (life <= 0)
         {
+            //rigidbody.velocity = ;
             anim.SetBool("isFalling", true);
             StartCoroutine(Destroy());
+        }
+        else
+        {
+            IAChoice();
         }
     }
 
@@ -197,11 +202,6 @@ public class FighterEnemy : MonoBehaviour
         Gizmos.DrawWireSphere(target1.transform.position, radius);
     }
 
-    IEnumerator Choice()
-    {
-        yield return new WaitForSeconds(2);
-        IAChoice();
-    }
 
     IEnumerator Attack()
     {

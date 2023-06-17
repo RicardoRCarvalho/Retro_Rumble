@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform trackingTarget;
+    public GameObject trackingTarget;
     public float followSpeed;
     // Start is called before the first frame update
     void Start()
@@ -15,8 +15,8 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Mathf.Lerp(transform.position.x, trackingTarget.position.x, Time.deltaTime * followSpeed);
-        float y = Mathf.Lerp(transform.position.y, trackingTarget.position.y, Time.deltaTime * followSpeed);
+        float x = Mathf.Lerp(transform.position.x, trackingTarget.transform.position.x, Time.deltaTime * followSpeed);
+        float y = Mathf.Lerp(transform.position.y, trackingTarget.transform.position.y, Time.deltaTime * followSpeed);
 
         transform.position = new Vector3(x, y, transform.position.z);
     }
