@@ -101,7 +101,6 @@ public class PlayerControls : MonoBehaviour
         }
         if(isOnTop)
         {
-            Debug.Log(vertical);
             if(vertical > 0)
             {
                 rbPcSprite.velocity = new Vector2(rbPcSombra.velocity.x, 0f);
