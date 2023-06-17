@@ -6,7 +6,8 @@ public class EnemyHitbox : MonoBehaviour
 {
     private Animator anim;
     public GameObject enemy;
-
+    public AudioClip[] soundsEnemy;
+    [SerializeField] AudioSource camera;
     void Start()
     {
         anim = enemy.GetComponent<Animator>();
@@ -17,6 +18,8 @@ public class EnemyHitbox : MonoBehaviour
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackFighter1") || anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
             other.GetComponent<PlayerControls>().Damage();
+            camera.clip = soundsEnemy[Random.Range(0, soundsEnemy.Length)];
+            camera.Play();
         }
         
     }

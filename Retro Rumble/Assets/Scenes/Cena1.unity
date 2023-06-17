@@ -677,6 +677,26 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7080400097157591122, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 845678990}
+    - target: {fileID: 7080400097157591122, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
+      propertyPath: soundsPlayer.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080400097157591122, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
+      propertyPath: soundsPlayer.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f172d99c09ffbc948b48f949891c97ca, type: 3}
+    - target: {fileID: 7080400097157591122, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
+      propertyPath: soundsPlayer.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e5d76edce0e8e5a43a794c6b520c17bc, type: 3}
+    - target: {fileID: 7080400097157591122, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
+      propertyPath: soundsPlayer.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7954f7ebc07e97c4d81e7eb216a574da, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
 --- !u!1 &91645135
@@ -1679,6 +1699,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 300496791}
+  soundsEnemy: []
+  camera: {fileID: 845678990}
 --- !u!1 &238285981
 GameObject:
   m_ObjectHideFlags: 0
@@ -3293,6 +3315,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5650782373576441236, guid: 5ac9bcacff848574ea54bffbec794b94, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 845678990}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ac9bcacff848574ea54bffbec794b94, type: 3}
 --- !u!1 &566228636
@@ -4425,6 +4451,7 @@ GameObject:
   - component: {fileID: 845678987}
   - component: {fileID: 845678986}
   - component: {fileID: 845678989}
+  - component: {fileID: 845678990}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4520,6 +4547,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trackingTarget: {fileID: 110880774}
   followSpeed: 1
+--- !u!82 &845678990
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845678985}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7954f7ebc07e97c4d81e7eb216a574da, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &886839965
 GameObject:
   m_ObjectHideFlags: 0
@@ -6678,7 +6801,28 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6065718160497756350, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 845678990}
+    - target: {fileID: 6065718160497756350, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
+      propertyPath: soundsPlayer.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6065718160497756350, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
+      propertyPath: soundsPlayer.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: f172d99c09ffbc948b48f949891c97ca, type: 3}
+    - target: {fileID: 6065718160497756350, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
+      propertyPath: soundsPlayer.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e5d76edce0e8e5a43a794c6b520c17bc, type: 3}
+    - target: {fileID: 6065718160497756350, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
+      propertyPath: soundsPlayer.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7954f7ebc07e97c4d81e7eb216a574da, type: 3}
+    m_RemovedComponents:
+    - {fileID: 4082020646596575326, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
 --- !u!1 &1272031656
 GameObject:
