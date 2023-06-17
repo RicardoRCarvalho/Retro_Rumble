@@ -9,6 +9,10 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] Rigidbody2D rbPcSprite;
     [SerializeField] Rigidbody2D rbPcSombra;
     public GameObject player;
+    [SerializeField] GameObject SecondPC;
+    [SerializeField] GameObject SecondUI;
+
+    public MenuBotao scriptMenu;
 
     [Header("Player Settings")]
     [SerializeField] float vSpeed;
@@ -73,6 +77,13 @@ public class PlayerControls : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalMaterial = spriteRenderer.material;
+        if (MenuBotao.numPlayers==1)
+        {
+            SecondPC.transform.position = new Vector2(-100000, 0);
+            SecondUI.transform.position = new Vector2(-100000, 0);
+            life = 0;
+        }
+       
     }
 
     //Atualiza de acordo com o editor
@@ -233,7 +244,7 @@ public class PlayerControls : MonoBehaviour
     }
     
     #endregion
-    //mudei bastante coisa aqui, tentativa de fazer as strings funcionarem. porem a transição ta foda
+    
     #region PlayerAttack
     public void Attack(InputAction.CallbackContext context)
     {

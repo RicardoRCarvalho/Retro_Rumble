@@ -788,12 +788,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109199684}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2699995, y: 3.86, z: 10}
+  m_LocalPosition: {x: 1.8800001, y: -0.20000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 845678988}
-  m_RootOrder: 11
+  m_Father: {fileID: 115576342}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &109199686
 SpriteRenderer:
@@ -976,7 +976,13 @@ Transform:
   m_LocalPosition: {x: -3.1499996, y: 4.06, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 396576409}
+  - {fileID: 1090692979}
+  - {fileID: 1184005111}
+  - {fileID: 109199685}
+  - {fileID: 1158323059}
+  - {fileID: 318728173}
   m_Father: {fileID: 845678988}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1573,12 +1579,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318728172}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.26, y: 3.93, z: 10}
+  m_LocalPosition: {x: 0.8899996, y: -0.12999988, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 845678988}
-  m_RootOrder: 13
+  m_Father: {fileID: 115576342}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &318728174
 SpriteRenderer:
@@ -1746,12 +1752,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396576408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.87999964, y: 4.52, z: 10}
+  m_LocalPosition: {x: 2.27, y: 0.46000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 845678988}
-  m_RootOrder: 8
+  m_Father: {fileID: 115576342}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &396576410
 SpriteRenderer:
@@ -2779,12 +2785,6 @@ Transform:
   - {fileID: 191204400}
   - {fileID: 748816237}
   - {fileID: 115576342}
-  - {fileID: 396576409}
-  - {fileID: 1090692979}
-  - {fileID: 1184005111}
-  - {fileID: 109199685}
-  - {fileID: 1158323059}
-  - {fileID: 318728173}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3427,12 +3427,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1090692978}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.82999945, y: 4.56, z: 10}
+  m_LocalPosition: {x: 2.3200002, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 845678988}
-  m_RootOrder: 9
+  m_Father: {fileID: 115576342}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1090692980
 SpriteRenderer:
@@ -3516,12 +3516,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158323058}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1299996, y: 3.93, z: 10}
+  m_LocalPosition: {x: 2.02, y: -0.12999988, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 845678988}
-  m_RootOrder: 12
+  m_Father: {fileID: 115576342}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1158323060
 SpriteRenderer:
@@ -3600,12 +3600,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184005110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2999997, y: 4.58, z: 10}
+  m_LocalPosition: {x: 0.8499999, y: 0.52, z: 0}
   m_LocalScale: {x: 1.04, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 845678988}
-  m_RootOrder: 10
+  m_Father: {fileID: 115576342}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1184005112
 SpriteRenderer:
@@ -3842,6 +3842,10 @@ PrefabInstance:
       propertyPath: powerUp
       value: 
       objectReference: {fileID: 2144874062}
+    - target: {fileID: 1266474276123060790, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
+      propertyPath: SecondUI
+      value: 
+      objectReference: {fileID: 115576341}
     - target: {fileID: 1266474276123060790, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
       propertyPath: portrait
       value: 
