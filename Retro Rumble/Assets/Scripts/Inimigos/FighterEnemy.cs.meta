@@ -5,9 +5,12 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - target1: {instanceID: 0}
+  - playerControls1: {fileID: 1266474276123060790, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
   - target2: {instanceID: 0}
+  - playerControls2: {fileID: 1266474276123060790, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
   - flashMaterial: {fileID: 2100000, guid: fd52694ab86286b4b9c432d0cc37f5b9, type: 2}
-  - powerExplosion: {instanceID: 0}
+  - powerExplosion: {fileID: 7285296133086624567, guid: 736737859f7ab8f49be08cdf43d850e5, type: 3}
+  - bg: {instanceID: 0}
   - rigidbody: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}

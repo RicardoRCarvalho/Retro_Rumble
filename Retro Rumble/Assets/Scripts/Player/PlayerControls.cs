@@ -70,6 +70,10 @@ public class PlayerControls : MonoBehaviour
     public GameObject HP;
     public GameObject MP;
 
+    [Header("Audio")]
+    [SerializeField] AudioSource camera;
+    public AudioClip woosh;
+
     #region PlayerMovement
 
     void Start()
@@ -99,11 +103,18 @@ public class PlayerControls : MonoBehaviour
             StartCoroutine(Death());
 
         }
-        if(isOnTop)
+        if(isOnTop && isGrounded)
         {
             if(vertical > 0)
             {
                 rbPcSprite.velocity = new Vector2(rbPcSombra.velocity.x, 0f);
+            }
+        }
+        if(isOnTop)
+        {
+            if(vertical > 0)
+            {
+                rbPcSombra.velocity = new Vector2(rbPcSombra.velocity.x, 0f);
             }
         }
         //Acabar com a animação de ataque
@@ -115,10 +126,6 @@ public class PlayerControls : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Collider"))
-        {
-            Debug.Log("collider");
-        }
         if (collision.gameObject.CompareTag("Ground"))
         {
 
@@ -236,6 +243,8 @@ public class PlayerControls : MonoBehaviour
         if (!hasShot && isGrounded && context.performed && mana >= 50)
         {
             powerUp.PowerAttack(!facingRight);
+            camera.clip = woosh;
+            camera.Play();
             mana -= 50;
             MP.transform.localScale = new Vector3(mana*0.01f, 1f, 1f);
             StartCoroutine(Shooted());
@@ -320,6 +329,7 @@ public class PlayerControls : MonoBehaviour
 
         // Start the Coroutine, and store the reference for it.
         flashRoutine = StartCoroutine(FlashRoutine());
+        StartCoroutine(Vibrate());
 
 
     }
@@ -372,5 +382,12 @@ public class PlayerControls : MonoBehaviour
         anim.SetBool("death", true);
         yield return new WaitForSeconds(2);
         this.gameObject.SetActive(false);
+    }
+
+    IEnumerator Vibrate()
+    {
+        Gamepad.current.SetMotorSpeeds(0.25f, 0.75f);
+        yield return new WaitForSeconds(1);
+        Gamepad.current.SetMotorSpeeds(0f, 0f);
     }
 }
