@@ -67,6 +67,17 @@
                 },
                 {
                     "name": "",
+                    "id": "ed3f76a8-cb33-40fc-aab4-ef4893f1985e",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "183876e4-1045-413c-85e5-5378bbaf601a",
                     "path": "<Keyboard>/j",
                     "interactions": "",
@@ -89,7 +100,29 @@
                 },
                 {
                     "name": "",
+                    "id": "1eaa8f37-5c30-4a7a-91d0-bf0bc015db68",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "978bfe49-cc26-4a3d-ab7b-7d7a29327403",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d5140c83-5677-4587-903d-b2ee2f0b3bfa",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
@@ -222,6 +255,17 @@
                 {
                     "name": "",
                     "id": "0072aa72-cc3a-433f-9528-a42b9a33e35a",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Special",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9db56cec-c0d2-466a-8192-3af43d5da1e7",
                     "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",

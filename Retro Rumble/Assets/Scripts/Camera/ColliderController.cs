@@ -12,22 +12,23 @@ public class ColliderController : MonoBehaviour
     public GameObject player2;
     private Vector3 targetPosition1;
     private Vector3 targetPosition2;
+    private bool passou = false;
     // Update is called once per frame
     void Update()
     {
-        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(bg.transform.position, new Vector2(19.20f, 10.80f), 0f);
+           Collider2D[] hitColliders = Physics2D.OverlapBoxAll(bg.transform.position, new Vector2(19.20f, 10.80f), 0f);
         int enemies = 0;
         foreach (Collider2D hitCollider in hitColliders)
         {
             if (hitCollider.tag == "Enemy")
             {
-                //Debug.Log("enemy");
                 enemies += 1;
             }
         }
-        if (enemies == 0)
+        if (enemies == 0  && !passou)
         {
             collider.isTrigger = true;
+            passou = true;
         }
     }
 
@@ -35,17 +36,18 @@ public class ColliderController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("player");
             cameraController.trackingTarget = GameObject.Find(nextBG.name);
             StartCoroutine(Teleport());
-
         }
     }
 
     IEnumerator Teleport()
     {
-        yield return new WaitForSeconds(2);
-        player1.transform.position = new Vector3(transform.position.x, player1.transform.position.y, 0f);
-        player2.transform.position = new Vector3(transform.position.x, player2.transform.position.y, 0f);
+        yield return new WaitForSeconds(1);
+        player1.transform.position = new Vector3(transform.position.x + 2f, player1.transform.position.y, 0f);
+        player2.transform.position = new Vector3(transform.position.x + 2f, player2.transform.position.y, 0f);
+        collider.isTrigger = false;
     }
 
 }

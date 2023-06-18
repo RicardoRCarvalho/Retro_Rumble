@@ -15,7 +15,7 @@ public class EnemyHitbox : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackFighter1") || anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+        if (other.gameObject.CompareTag("Player") && anim.GetCurrentAnimatorStateInfo(0).IsName("AttackFighter1") || anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1") || anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
             other.GetComponent<PlayerControls>().Damage();
             camera.clip = soundsEnemy[Random.Range(0, soundsEnemy.Length)];

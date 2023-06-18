@@ -16,6 +16,8 @@ public class BossEnemy : MonoBehaviour
     public Material flashMaterial;
     public GameObject powerExplosion;
     public GameObject bulletPrefab;
+    public GameObject bg;
+    public GameObject explosion;
 
     private Animator anim;
     private float target1Distance;
@@ -26,6 +28,7 @@ public class BossEnemy : MonoBehaviour
     private Vector3 targetPosition;
     private bool hasAttacked;
     private bool hasShot;
+    private bool asleep = true;
 
     public AudioSource camera;
     public AudioClip shootSound;
@@ -57,10 +60,26 @@ public class BossEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(Choice());
         if (life <= 0)
         {
             StartCoroutine(Destroy());
+        }
+        else if (!asleep)
+        {
+            IAChoice();
+        }
+        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(bg.transform.position, new Vector2(19.20f, 10.80f), 0f);
+        int players = 0;
+        foreach (Collider2D hitCollider in hitColliders)
+        {
+            if (hitCollider.tag == "Player")
+            {
+                players += 1;
+            }
+        }
+        if (players != 0)
+        {
+            asleep = false;
         }
     }
 
@@ -233,6 +252,7 @@ public class BossEnemy : MonoBehaviour
         //yield return new WaitForSeconds(1);
         anim.SetBool("isShooting", true);
         StartCoroutine(Shot());
+        camera.clip = shootSound;
         camera.Play();
         GameObject bulletObject = Instantiate(bulletPrefab);
         bulletObject.transform.position = transform.position;
@@ -292,6 +312,8 @@ public class BossEnemy : MonoBehaviour
     
     IEnumerator Destroy()
     {
+        GameObject deathExplosion = Instantiate(explosion);
+        deathExplosion.transform.position = new Vector3 (transform.position.x + Random.Range(-1.5f, 1.5f), transform.position.y + Random.Range(-2f, 2f), 0f);
         yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }

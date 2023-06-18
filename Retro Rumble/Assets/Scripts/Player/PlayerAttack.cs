@@ -8,10 +8,12 @@ public class PlayerAttack : MonoBehaviour
     public AudioClip[] soundsPlayer;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("hit");
-        other.GetComponent<FighterEnemy>().BASIC_STUN();
-        camera.clip = soundsPlayer[Random.Range(0, soundsPlayer.Length)];
-        camera.Play();
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("hit");            
+            other.GetComponent<FighterEnemy>().BASIC_STUN();
+            camera.clip = soundsPlayer[Random.Range(0, soundsPlayer.Length)];
+            camera.Play();
+        }
     }
-    
 }

@@ -15,6 +15,7 @@ public class FighterEnemy : MonoBehaviour
     public PlayerControls playerControls2;
     public Material flashMaterial;
     public GameObject powerExplosion;
+    public GameObject bg;
 
     private Animator anim;
     private float target1Distance;
@@ -24,6 +25,7 @@ public class FighterEnemy : MonoBehaviour
     private int target2EnemiesEngaged = 0;
     private Vector3 targetPosition;
     private bool hasAttacked;
+    private bool asleep;
 
 
     // The SpriteRenderer that should flash.
@@ -53,15 +55,27 @@ public class FighterEnemy : MonoBehaviour
     void Update()
     {
         
-        if (life <= 0)
+         if (life <= 0)
         {
-            //rigidbody.velocity = ;
             anim.SetBool("isFalling", true);
             StartCoroutine(Destroy());
         }
-        else
+        else if (!asleep)
         {
             IAChoice();
+        }
+        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(bg.transform.position, new Vector2(19.20f, 10.80f), 0f);
+        int players = 0;
+        foreach (Collider2D hitCollider in hitColliders)
+        {
+            if (hitCollider.tag == "Player")
+            {
+                players += 1;
+            }
+        }
+        if (players != 0)
+        {
+            asleep = false;
         }
     }
 

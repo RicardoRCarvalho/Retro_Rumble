@@ -15,6 +15,7 @@ public class SkeletonEnemy : MonoBehaviour
     public PlayerControls playerControls2;
     public Material flashMaterial;
     public GameObject powerExplosion;
+    public GameObject bg;
 
     private Animator anim;
     private float target1Distance;
@@ -24,6 +25,7 @@ public class SkeletonEnemy : MonoBehaviour
     private int target2EnemiesEngaged = 0;
     private Vector3 targetPosition;
     private bool hasAttacked;
+    private bool asleep;
 
 
     // The SpriteRenderer that should flash.
@@ -52,11 +54,27 @@ public class SkeletonEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(Choice());
         if (life <= 0)
         {
             anim.SetBool("isFalling", true);
             StartCoroutine(Destroy());
+        }
+        else if (!asleep)
+        {
+            IAChoice();
+        }
+        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(bg.transform.position, new Vector2(19.20f, 10.80f), 0f);
+        int players = 0;
+        foreach (Collider2D hitCollider in hitColliders)
+        {
+            if (hitCollider.tag == "Player")
+            {
+                players += 1;
+            }
+        }
+        if (players != 0)
+        {
+            asleep = false;
         }
     }
 
