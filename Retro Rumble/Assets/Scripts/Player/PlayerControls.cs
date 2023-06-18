@@ -33,13 +33,10 @@ public class PlayerControls : MonoBehaviour
     //Variaveis de animação
     private Animator anim;
     private bool isWalking;
-    private bool isAttacking;
+    private bool isAttacking=false;
     
 
-    [Header("Hitbox")]
-    [SerializeField] GameObject hitboxPoint;
-    [SerializeField] float radiusHitbox;
-    [SerializeField] BoxCollider2D hitbox;
+
     public LayerMask enemiesGround;
 
     [Header("Hitbox")]
@@ -133,12 +130,22 @@ public class PlayerControls : MonoBehaviour
         }
 
 
+        if (isAttacking)
+        {
+            PlayerInput pi = GetComponent<PlayerInput>();
+            pi.actions.FindAction("Move").Disable();
+        }
+        else
+        {
+            PlayerInput pi = GetComponent<PlayerInput>();
+            pi.actions.FindAction("Move").Enable();
+        }
         //Acabar com a animação de ataque
-       // if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-       // {
-       //     anim.SetBool("isAttacking", false);
-      //  }
-       
+        // if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        // {
+        //     anim.SetBool("isAttacking", false);
+        //  }
+
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -170,7 +177,7 @@ public class PlayerControls : MonoBehaviour
     }
 
     //Movimento
-    public void Move(InputAction.CallbackContext context)
+    public void Move(InputAction.CallbackContext context )
     {
         if (context.performed)
         {
@@ -188,6 +195,7 @@ public class PlayerControls : MonoBehaviour
                 anim.SetBool("isWalking", true);
 
             }
+            
             else
             {
 
@@ -216,6 +224,8 @@ public class PlayerControls : MonoBehaviour
             rbPcSombra.velocity = new Vector2(0, 0);
             rbPcSprite.velocity = new Vector2(0, 0);
         }
+
+     
     }
 
 
@@ -232,7 +242,7 @@ public class PlayerControls : MonoBehaviour
              // rbPcSprite.WakeUp();
                 rbPcSprite.AddForce(new Vector2(transform.position.x , jumpingPower));
 
-
+                
 
                 anim.SetBool("isJumping", true);
      
@@ -281,14 +291,15 @@ public class PlayerControls : MonoBehaviour
     private void Attack_String()
     {
         Debug.Log("botaoataque");
-
+        
         if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack2"))
         
 
         {
             anim.SetBool("attack3String1", true);
-            
-           
+            isAttacking = true;
+       
+
         }
 
         else if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack1"))
@@ -296,34 +307,38 @@ public class PlayerControls : MonoBehaviour
 
         {
             anim.SetBool("attack2String1", true);
-            
+            isAttacking = true;
+           
             Debug.Log("combo=2");
         }
         else if(this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || this.anim.GetCurrentAnimatorStateInfo(0).IsName("RunPlayer1"))
         {
             anim.SetBool("attack1String1", true);
-            
+            isAttacking = true;
             Debug.Log("combo=1");
+            
         }
     }
     public void Attack1End()
     {
 
-       
+          isAttacking = false;
 
-            anim.SetBool("attack1String1", false);
+          anim.SetBool("attack1String1", false);
         
     }
     public void Attack2End()
-    { 
-     
-            anim.SetBool("attack2String1", false);
+    {
+
+        isAttacking = false;
+        anim.SetBool("attack2String1", false);
      
     }
     public void Attack3End()
     {
-  
-            anim.SetBool("attack3String1", false);
+
+        isAttacking = false;
+        anim.SetBool("attack3String1", false);
    
   
     }
