@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -74,6 +75,9 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] AudioSource camera;
     public AudioClip woosh;
 
+    [Header("Gamepad")]
+    private Gamepad gamepad1;
+    private Gamepad gamepad2;
     #region PlayerMovement
 
     void Start()
@@ -87,7 +91,17 @@ public class PlayerControls : MonoBehaviour
             SecondUI.transform.position = new Vector2(-100000, 0);
             life = 0;
         }
-       
+        if(Gamepad.all.ElementAtOrDefault(0) != null)
+        {
+            Debug.Log("entrou");
+            gamepad1 = Gamepad.all[0];
+        }
+        if(Gamepad.all.ElementAtOrDefault(1) != null)
+        {
+            Debug.Log("entrou");
+            gamepad2 = Gamepad.all[1];
+        }
+
     }
 
     //Atualiza de acordo com o editor
@@ -117,6 +131,8 @@ public class PlayerControls : MonoBehaviour
                 rbPcSombra.velocity = new Vector2(rbPcSombra.velocity.x, 0f);
             }
         }
+
+
         //Acabar com a animação de ataque
        // if (anim.GetCurrentAnimatorStateInfo(0).IsName("AttackPlayer1")&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
        // {
@@ -338,6 +354,7 @@ public class PlayerControls : MonoBehaviour
     {
         StartCoroutine(AnimDamage());
     }
+    
 
     IEnumerator Shooted()
     {
@@ -386,8 +403,20 @@ public class PlayerControls : MonoBehaviour
 
     IEnumerator Vibrate()
     {
-        Gamepad.current.SetMotorSpeeds(0.25f, 0.75f);
-        yield return new WaitForSeconds(1);
-        Gamepad.current.SetMotorSpeeds(0f, 0f);
+        if (player.name == "Player2")
+        {
+            gamepad1.SetMotorSpeeds(0.25f, 0.75f);
+            yield return new WaitForSeconds(1);
+            gamepad1.SetMotorSpeeds(0f, 0f);
+        }
+        else if (player.name == "Player1")
+        {
+            if(Gamepad.all.ElementAtOrDefault(1) != null)
+            {
+                gamepad2.SetMotorSpeeds(0.25f, 0.75f);
+                yield return new WaitForSeconds(1);
+                gamepad2.SetMotorSpeeds(0f, 0f); 
+            }  
+        }
     }
 }
