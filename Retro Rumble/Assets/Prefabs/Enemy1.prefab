@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9a35f8915658549afc74c6e408e1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 1
   chaseDistance: 3
   stopDistance: 1
   radius: 2
@@ -138,6 +138,7 @@ MonoBehaviour:
   playerControls2: {fileID: 1266474276123060790, guid: 8cca742541bb812429b1420a577c7e0c, type: 3}
   flashMaterial: {fileID: 2100000, guid: fd52694ab86286b4b9c432d0cc37f5b9, type: 2}
   powerExplosion: {fileID: 7285296133086624567, guid: 736737859f7ab8f49be08cdf43d850e5, type: 3}
+  bg: {fileID: 0}
   rigidbody: {fileID: 5650782373127844928}
 --- !u!95 &5650782373127844935
 Animator:

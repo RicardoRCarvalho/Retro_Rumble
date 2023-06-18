@@ -333,6 +333,17 @@
                 },
                 {
                     "name": "",
+                    "id": "7b38829a-b5ab-4e04-8b89-bc135012538f",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e66d6203-aedc-4765-a23c-f13dbe2aeafa",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
@@ -355,6 +366,28 @@
                 },
                 {
                     "name": "",
+                    "id": "3c595e0f-ebd3-435d-81f3-015416dc0679",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UpMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3857ea0f-c826-4df6-b375-363291c6a4dd",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UpMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ecb4ad9e-54e3-4c59-82fc-b6a376676b01",
                     "path": "<Keyboard>/s",
                     "interactions": "",
@@ -371,6 +404,28 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
+                    "action": "DownMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0862b93-c789-4daf-8cae-f69c4dcfc47c",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DownMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5a38c629-939e-4a32-8ef9-6de5fcc3da4e",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "DownMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
