@@ -354,6 +354,7 @@
 "Assets/Scripts/Inimigos/Bullet.cs"
 "Assets/Scripts/Inimigos/EnemyController.cs"
 "Assets/Scripts/Inimigos/EnemyHitbox.cs"
+"Assets/Scripts/Inimigos/explosion.cs"
 "Assets/Scripts/Inimigos/FighterEnemy.cs"
 "Assets/Scripts/Inimigos/SkeletonEnemy.cs"
 "Assets/Scripts/MenuBotao.cs"
