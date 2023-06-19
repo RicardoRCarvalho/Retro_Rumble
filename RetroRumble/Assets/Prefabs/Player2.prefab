@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266474275676456927}
   m_LocalRotation: {x: -0.0014836092, y: -0, z: -0, w: 0.9999989}
-  m_LocalPosition: {x: 0.837559, y: 0.082494564, z: 0}
+  m_LocalPosition: {x: 0.837559, y: -0.02, z: 0}
   m_LocalScale: {x: 1.0692242, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73,6 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
   soundsPlayer: []
+  playerControls: {fileID: 0}
 --- !u!1 &1266474275988204331
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +99,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266474275988204331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -0.76, z: 0}
+  m_LocalPosition: {x: -0.06, y: -0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -203,7 +204,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -260052927, guid: 867c1672d4cdd5548a6c433023b508b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7834745d8154d944091cf625ae01e799, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -231,7 +232,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.85, y: 4.77}
+    oldSize: {x: 1.54, y: 3.97}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -350,6 +351,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b7a36420-19d5-4bf3-b01b-849e7cad2f35
     m_ActionName: UI/DownMenu[/Keyboard/s,/Keyboard/downArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1049def4-19ea-4dcb-bfbe-f778d39f5dce
+    m_ActionName: Player/Reset[/Keyboard/escape,/DualShock4GamepadHID/select]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -381,9 +386,8 @@ MonoBehaviour:
     m_Bits: 64
   groundCheck: {fileID: 1266474275988204330}
   isOnTop: 0
-  hitboxPoint: {fileID: 1266474275676456927}
-  radiusHitbox: 0.5
-  hitbox: {fileID: 0}
+  stairsController: {fileID: 0}
+  stair: 0
   enemiesGround:
     serializedVersion: 2
     m_Bits: 8
@@ -393,6 +397,7 @@ MonoBehaviour:
   life: 0
   flashMaterial: {fileID: 0}
   bulletExplosion: {fileID: 0}
+  otherPlayerControls: {fileID: 0}
   portrait: {fileID: 0}
   HP: {fileID: 0}
   MP: {fileID: 0}
@@ -408,7 +413,7 @@ Animator:
   m_GameObject: {fileID: 1266474276123060791}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 09bd7cd7a4f4e3a4b94eee5cbc8be19a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9ac992ceb2b5fe549ab96b5fa6058533, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -662,3 +667,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerControls: {fileID: 1266474276123060790}
+  hitbox: {fileID: 0}

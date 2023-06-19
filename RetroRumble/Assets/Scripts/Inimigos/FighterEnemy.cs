@@ -59,6 +59,7 @@ public class FighterEnemy : MonoBehaviour
         {
             anim.SetBool("isFalling", true);
             StartCoroutine(Destroy());
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
         }
         else if (!asleep)
         {
@@ -219,7 +220,6 @@ public class FighterEnemy : MonoBehaviour
 
     IEnumerator Attack()
     {
-        yield return new WaitForSeconds(1);
         anim.SetBool("isAttacking", true);
         StartCoroutine(Attacked());
         yield return new WaitForSeconds(1);
@@ -229,7 +229,7 @@ public class FighterEnemy : MonoBehaviour
     IEnumerator Attacked()
     {
         hasAttacked = true;
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         hasAttacked = false;
         
     }

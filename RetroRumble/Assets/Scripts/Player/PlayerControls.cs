@@ -149,7 +149,7 @@ public class PlayerControls : MonoBehaviour
             PlayerInput pi = GetComponent<PlayerInput>();
             pi.actions.FindAction("Move").Disable();
         }
-        else
+        else if (stair == false)
         {
             PlayerInput pi = GetComponent<PlayerInput>();
             pi.actions.FindAction("Move").Enable();
@@ -361,7 +361,6 @@ public class PlayerControls : MonoBehaviour
 
     public void Damage()
     {
-        Debug.Log("damage");
         anim.SetBool("damage", true);
         portrait.PortraitHit();
         if (flashRoutine != null)
@@ -374,7 +373,6 @@ public class PlayerControls : MonoBehaviour
         // Start the Coroutine, and store the reference for it.
         flashRoutine = StartCoroutine(FlashRoutine());
         StartCoroutine(Vibrate());
-
 
     }
 
@@ -444,13 +442,13 @@ public class PlayerControls : MonoBehaviour
 
     IEnumerator Vibrate()
     {
-        if (player.name == "Player2")
+        if (player.name == "Player1")
         {
             gamepad1.SetMotorSpeeds(0.25f, 0.75f);
             yield return new WaitForSeconds(1);
             gamepad1.SetMotorSpeeds(0f, 0f);
         }
-        else if (player.name == "Player1")
+        else if (player.name == "Player2")
         {
             if(Gamepad.all.ElementAtOrDefault(1) != null)
             {

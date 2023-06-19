@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1852261384, guid: 308726bb07f8a804aa1c1f96f7f23a98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
   chaseDistance: 3
   stopDistance: 1
   radius: 2
-  life: 6
+  life: 3
   target1: {fileID: 0}
   playerControls1: {fileID: 1266474276123060790, guid: 2255b7bc4ec3ce349989e2a425e8ab26, type: 3}
   target2: {fileID: 0}
@@ -161,6 +161,7 @@ MonoBehaviour:
   powerExplosion: {fileID: 7285296133086624567, guid: 736737859f7ab8f49be08cdf43d850e5, type: 3}
   bg: {fileID: 0}
   rigidbody: {fileID: 5709179879436655742}
+  Knockback: 100
 --- !u!50 &5709179879436655742
 Rigidbody2D:
   serializedVersion: 4

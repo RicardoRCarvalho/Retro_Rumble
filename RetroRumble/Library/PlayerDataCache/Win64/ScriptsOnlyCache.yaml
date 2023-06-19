@@ -5,8 +5,11 @@ ScriptsOnlyBuild:
     - Bullet
     - CameraController
     - ColliderController
+    - EndGame
+    - EndStairsController
     - EnemyHitbox
     - FighterEnemy
+    - IfSecondPlayer
     - MenuBotao
     - PlayerAttack
     - PlayerControls
@@ -14,6 +17,8 @@ ScriptsOnlyBuild:
     - Power
     - PowerUpController
     - ShadowController
+    - SkeletonEnemy
+    - StairsController
     - explosion
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -51,8 +56,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -125,6 +132,9 @@ ScriptsOnlyBuild:
     methodName: Special
   - assembly: Assembly-CSharp
     fullTypeName: PlayerControls
+    methodName: Reset
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerControls
     methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: PlayerControls
@@ -135,6 +145,18 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PlayerControls
     methodName: Special
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerControls
+    methodName: Reset
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerControls
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerControls
+    methodName: Jump
+  - assembly: Assembly-CSharp
+    fullTypeName: PlayerControls
+    methodName: Attack
   - assembly: Assembly-CSharp
     fullTypeName: PlayerControls
     methodName: Move
@@ -183,35 +205,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 2504}
+      Script: {instanceID: 2228}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 4278}
+      Script: {instanceID: 2734}
     - Class: 114
-      Script: {instanceID: 5334}
+      Script: {instanceID: 2796}
     - Class: 114
-      Script: {instanceID: 5840}
+      Script: {instanceID: 4282}
     - Class: 114
-      Script: {instanceID: 6042}
+      Script: {instanceID: 5338}
     - Class: 114
-      Script: {instanceID: 6090}
+      Script: {instanceID: 5844}
     - Class: 114
-      Script: {instanceID: 6698}
+      Script: {instanceID: 6046}
     - Class: 114
-      Script: {instanceID: 7118}
+      Script: {instanceID: 6094}
     - Class: 114
-      Script: {instanceID: 7472}
+      Script: {instanceID: 6200}
     - Class: 114
-      Script: {instanceID: 7754}
+      Script: {instanceID: 6704}
     - Class: 114
-      Script: {instanceID: 9042}
+      Script: {instanceID: 7124}
     - Class: 114
-      Script: {instanceID: 9338}
+      Script: {instanceID: 7478}
     - Class: 114
-      Script: {instanceID: 9416}
+      Script: {instanceID: 7760}
     - Class: 114
-      Script: {instanceID: 9622}
+      Script: {instanceID: 8140}
+    - Class: 114
+      Script: {instanceID: 8646}
+    - Class: 114
+      Script: {instanceID: 9050}
+    - Class: 114
+      Script: {instanceID: 9346}
+    - Class: 114
+      Script: {instanceID: 9424}
+    - Class: 114
+      Script: {instanceID: 9630}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -256,21 +288,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1620}
     - Class: 114
-      Script: {instanceID: 2344}
+      Script: {instanceID: 2346}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 4278}
+      Script: {instanceID: 4282}
     - Class: 114
-      Script: {instanceID: 4798}
+      Script: {instanceID: 4802}
     - Class: 114
-      Script: {instanceID: 5130}
+      Script: {instanceID: 5134}
     - Class: 114
-      Script: {instanceID: 6026}
+      Script: {instanceID: 6030}
     - Class: 114
-      Script: {instanceID: 6744}
+      Script: {instanceID: 6750}
     - Class: 114
-      Script: {instanceID: 7156}
+      Script: {instanceID: 7162}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -374,6 +406,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseExitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 7bb54777455fa2ccc2b0c064deeb5d89
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndGame
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -444,6 +482,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: SkeletonAsset
+  - hash:
+      serializedVersion: 2
+      Hash: e4bdb1caff6046d4eeaa933db1352b70
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IfSecondPlayer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -926,7 +970,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: d1bbdf7a9807147128e844a21d871a3c
+      Hash: a3d271edcaffdcd8f9224debfa5b4e54
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerControls
@@ -980,7 +1024,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: d5659d4118d1a432b7a6a21a3bed26b6
+      Hash: 96bd0cb7e2feb6af3bcdec0423f3562e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShadowController
@@ -990,6 +1034,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Power
+  - hash:
+      serializedVersion: 2
+      Hash: 3ad2e39e226fa75aef6ed043e15668c2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndStairsController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1124,7 +1174,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: b289013209f7377e788f64e5d4288e0a
+      Hash: 8c2957135763a9b4ac477d864fe5e277
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BossEnemy
@@ -1250,6 +1300,12 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
+      Hash: d9d60c3e777532091ed6e9e526d765f1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StairsController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1328,7 +1384,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: b678d8575304508f69f39a447c8a013e
+      Hash: 22d7c4065040ec37782311f01e331eca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SkeletonEnemy
@@ -1370,7 +1426,7 @@ ScriptsOnlyBuild:
     className: MultiplayerEventSystem
   - hash:
       serializedVersion: 2
-      Hash: b678d8575304508f69f39a447c8a013e
+      Hash: 22d7c4065040ec37782311f01e331eca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FighterEnemy
@@ -1430,7 +1486,7 @@ ScriptsOnlyBuild:
     className: SpriteLibrarySourceAsset
   - hash:
       serializedVersion: 2
-      Hash: 9e0746013aa77750178872b15b8f7626
+      Hash: 247c7b5154feb47e08d8c59a94f4ec29
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerAttack

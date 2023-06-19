@@ -25,8 +25,8 @@ public class StairsController : MonoBehaviour
     {
         if (stair == true)
         {
-            Vector3 targetPosition = new Vector3 (endCollider.transform.position.x, endCollider.transform.position.y, endCollider.transform.position.z);
-            player1.transform.position = Vector2.MoveTowards(player1.transform.position, targetPosition, 2.5f * Time.deltaTime);
+            Vector3 targetPosition = new Vector3 (endCollider.transform.position.x, endCollider.transform.position.y + 5f, endCollider.transform.position.z);
+            player1.transform.position = Vector2.MoveTowards(player1.transform.position, targetPosition, 3f * Time.deltaTime);
             player2.transform.position = Vector2.MoveTowards(player2.transform.position, targetPosition, 3f * Time.deltaTime);
         }
     }

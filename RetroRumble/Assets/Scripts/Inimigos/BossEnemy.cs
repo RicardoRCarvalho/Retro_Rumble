@@ -63,6 +63,7 @@ public class BossEnemy : MonoBehaviour
         if (life <= 0)
         {
             StartCoroutine(Destroy());
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
         }
         else if (!asleep)
         {
@@ -243,7 +244,7 @@ public class BossEnemy : MonoBehaviour
     IEnumerator Attacked()
     {
         hasAttacked = true;
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(1.5f);
         hasAttacked = false;   
     }
 
@@ -271,9 +272,9 @@ public class BossEnemy : MonoBehaviour
 
     IEnumerator Hit()
     {
-        rigidbody.AddForce(new Vector2(Knockback, 0));
+        rigidbody.AddForce(new Vector2(0, 0));
         yield return new WaitForSeconds(1);
-        rigidbody.AddForce(new Vector2(-Knockback, 0));
+        rigidbody.AddForce(new Vector2(0, 0));
 
     }
     public void BASIC_STUN()
