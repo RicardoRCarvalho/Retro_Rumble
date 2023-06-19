@@ -11,10 +11,6 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (transform.position.x < other.transform.position.x)
-        {
-
-        }
         if (other.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("hit");     

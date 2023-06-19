@@ -1,535 +1,541 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1687153767730320, "dur":2133, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153767732458, "dur":919, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1687153767733408, "dur":43, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1687153767733451, "dur":336, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1687153767733804, "dur":1485, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153767735289, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981381, "dur":263, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981644, "dur":40, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981685, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981690, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981703, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981704, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981716, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981718, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981723, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981725, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981730, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981732, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981739, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981741, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981746, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981747, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981752, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981754, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981759, "dur":42, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981801, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981806, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981808, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981813, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981814, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981819, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981831, "dur":3, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777981843, "dur":7330, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1687153767734205, "dur":1092, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767735299, "dur":13994, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767749306, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/emscripten/axh1u/wrapper_emcc.bat" }}
-,{ "pid":12345, "tid":1, "ts":1687153767749310, "dur":335, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767749657, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/r5a7_System0.lump.cpp" }}
-,{ "pid":12345, "tid":1, "ts":1687153767749658, "dur":266, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767749925, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/r5a7_System1.lump.cpp" }}
-,{ "pid":12345, "tid":1, "ts":1687153767749927, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767750087, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/b1f9_tests3.lump.cpp" }}
-,{ "pid":12345, "tid":1, "ts":1687153767750088, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767750228, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/0fsi_Posix4.lump.cpp" }}
-,{ "pid":12345, "tid":1, "ts":1687153767750229, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767750388, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/j3py_vm0.lump.cpp" }}
-,{ "pid":12345, "tid":1, "ts":1687153767750389, "dur":159, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767750550, "dur":2202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/z9p7_y_vm0.lump.o" }}
-,{ "pid":12345, "tid":1, "ts":1687153767752752, "dur":603, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767753356, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/n27e_stem0.lump.o" }}
-,{ "pid":12345, "tid":1, "ts":1687153767753518, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767753604, "dur":979, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/i5p0_stem2.lump.o" }}
-,{ "pid":12345, "tid":1, "ts":1687153767754583, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767754668, "dur":627, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/rn23_stem1.lump.o" }}
-,{ "pid":12345, "tid":1, "ts":1687153767755296, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767755400, "dur":339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/n33s_encode.o" }}
-,{ "pid":12345, "tid":1, "ts":1687153767755739, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767755831, "dur":735, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/wqny_Mono0.lump.o" }}
-,{ "pid":12345, "tid":1, "ts":1687153767756566, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767756713, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/kk4d_sEmulation.o" }}
-,{ "pid":12345, "tid":1, "ts":1687153767756848, "dur":216, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767757065, "dur":254, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/3igs_oryMapImpl.o" }}
-,{ "pid":12345, "tid":1, "ts":1687153767757319, "dur":150, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767757470, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteResponseFile Library/Bee/artifacts/rsp/8995565923215908413.rsp" }}
-,{ "pid":12345, "tid":1, "ts":1687153767757478, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767757601, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/carva/RetroRumbleWeb/TemplateData/progress-bar-empty-light.png" }}
-,{ "pid":12345, "tid":1, "ts":1687153767757618, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767757759, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"PreprocessJS C:/Users/carva/RetroRumbleWeb/Build/RetroRumbleWeb.loader.js" }}
-,{ "pid":12345, "tid":1, "ts":1687153767757831, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1687153767757889, "dur":10223532, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767734271, "dur":1039, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767735312, "dur":389, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767735701, "dur":13606, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767749308, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/u9en_Mono0.lump.cpp" }}
-,{ "pid":12345, "tid":2, "ts":1687153767749310, "dur":226, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767749537, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/nfqj_vm-utils0.lump.cpp" }}
-,{ "pid":12345, "tid":2, "ts":1687153767749538, "dur":177, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767749717, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/im8z_System0.lump.cpp" }}
-,{ "pid":12345, "tid":2, "ts":1687153767749718, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767749903, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/38he_metadata2.lump.cpp" }}
-,{ "pid":12345, "tid":2, "ts":1687153767749904, "dur":195, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767750101, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/wxyl_Generic0.lump.cpp" }}
-,{ "pid":12345, "tid":2, "ts":1687153767750102, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767750240, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/cjyx_Win321.lump.cpp" }}
-,{ "pid":12345, "tid":2, "ts":1687153767750241, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767750389, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/j3py_vm1.lump.cpp" }}
-,{ "pid":12345, "tid":2, "ts":1687153767750390, "dur":168, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767750559, "dur":2628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/ilhi_y_vm1.lump.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767753187, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767753289, "dur":472, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/5tuh_.Net0.lump.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767753761, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767753868, "dur":651, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/52hf_in320.lump.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767754519, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767754631, "dur":701, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/c0yo_tils0.lump.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767755332, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767755416, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/u0go_memory.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767755449, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767755574, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/vsz1_infback.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767755602, "dur":674, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767756277, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/pjm4_references.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767756408, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767756511, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/lvyy_erences_hq.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767756612, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767756718, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/gz2i_ngServices.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767756815, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767756905, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/pa2h_opy_encode.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767756948, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767757121, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/lyxo_platform.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767757179, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767757279, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/c09z_trees.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767757328, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767757447, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/ie29_crc32.o" }}
-,{ "pid":12345, "tid":2, "ts":1687153767757482, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767757620, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/carva/RetroRumbleWeb/TemplateData/progress-bar-empty-dark.png" }}
-,{ "pid":12345, "tid":2, "ts":1687153767757644, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1687153767757791, "dur":10223593, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767734261, "dur":1044, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767735307, "dur":395, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767735702, "dur":13606, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767749309, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/s2kc_gc0.lump.cpp" }}
-,{ "pid":12345, "tid":3, "ts":1687153767749310, "dur":246, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767749557, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/j3py_vm6.lump.cpp" }}
-,{ "pid":12345, "tid":3, "ts":1687153767749558, "dur":162, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767749723, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/r5a7_System2.lump.cpp" }}
-,{ "pid":12345, "tid":3, "ts":1687153767749724, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767749912, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/q96b_ThreadPool0.lump.cpp" }}
-,{ "pid":12345, "tid":3, "ts":1687153767749913, "dur":623, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767750538, "dur":1763, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/4j9h_Pool0.lump.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767752301, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767752408, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/3pe4_eric0.lump.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767752548, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767752648, "dur":629, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/azi1_-api2.lump.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767753277, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767753396, "dur":758, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/wao7_stem0.lump.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767754154, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767754244, "dur":561, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/0ea6_4_os0.lump.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767754805, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767754904, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/qnb5_huffman.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767755016, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767755129, "dur":326, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/9bcu_metablock.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767755455, "dur":161, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767755617, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/bdwgc/master_WebGL_wasm/5bw3_al_handler.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767755628, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767755805, "dur":915, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/di4w_stem3.lump.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767756720, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767756819, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/5uom_cketBridge.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767756856, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767756949, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/bwyb_iveMethods.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767757015, "dur":253, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767757269, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/rowm_inftrees.o" }}
-,{ "pid":12345, "tid":3, "ts":1687153767757318, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767757462, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteResponseFile Library/Bee/artifacts/rsp/5362588684057008505.rsp" }}
-,{ "pid":12345, "tid":3, "ts":1687153767757480, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767757598, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/carva/RetroRumbleWeb/TemplateData/progress-bar-full-light.png" }}
-,{ "pid":12345, "tid":3, "ts":1687153767757622, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1687153767757762, "dur":10223618, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767734229, "dur":1071, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767735302, "dur":693, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767735995, "dur":13308, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767749307, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/2if8_System2.lump.cpp" }}
-,{ "pid":12345, "tid":4, "ts":1687153767749309, "dur":549, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767749860, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/9olk_System.Net0.lump.cpp" }}
-,{ "pid":12345, "tid":4, "ts":1687153767749861, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767750021, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/h3v3_c-api2.lump.cpp" }}
-,{ "pid":12345, "tid":4, "ts":1687153767750022, "dur":182, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767750206, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/1bje_OSX0.lump.cpp" }}
-,{ "pid":12345, "tid":4, "ts":1687153767750208, "dur":161, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767750370, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/hbfb_utils0.lump.cpp" }}
-,{ "pid":12345, "tid":4, "ts":1687153767750371, "dur":174, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767750546, "dur":642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/rbn5_tils0.lump.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767751188, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767751295, "dur":912, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/rxj8_in322.lump.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767752208, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767752308, "dur":478, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/c6uy_yPAL0.lump.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767752786, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767752885, "dur":366, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/ey3l_roid0.lump.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767753251, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767753363, "dur":385, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/6hym_stem0.lump.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767753748, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767753844, "dur":531, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/3xko_4_os1.lump.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767754375, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767754452, "dur":979, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/ai4b_y_vm5.lump.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767755431, "dur":159, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767755591, "dur":389, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/2qx7_imeHelpers.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767755981, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767756067, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/8dkd_dictionary.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767756094, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767756179, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/6ktr_bit_reader.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767756242, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767756407, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/jvk0_osixHelper.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767756497, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767756592, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/2axc_s_fragment.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767756675, "dur":167, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767756843, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/ms1n_coder_dict.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767756947, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767757038, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/427q_bit_stream.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767757188, "dur":189, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767757378, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/8c7x_command.o" }}
-,{ "pid":12345, "tid":4, "ts":1687153767757421, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767757516, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/carva/RetroRumbleWeb/TemplateData/unity-logo-light.png" }}
-,{ "pid":12345, "tid":4, "ts":1687153767757539, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767757647, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"PreprocessJS C:/Users/carva/RetroRumbleWeb/index.html" }}
-,{ "pid":12345, "tid":4, "ts":1687153767757662, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1687153767757793, "dur":10223601, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767734308, "dur":1013, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767735323, "dur":373, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767735696, "dur":13599, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767749305, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/emscripten/v88yk/wrapper_emar.bat" }}
-,{ "pid":12345, "tid":5, "ts":1687153767749310, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767749459, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/v3y8_libil2cpp0.lump.cpp" }}
-,{ "pid":12345, "tid":5, "ts":1687153767749461, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767749586, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/j3py_vm5.lump.cpp" }}
-,{ "pid":12345, "tid":5, "ts":1687153767749587, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767749738, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/xxob_em.Runtime0.lump.cpp" }}
-,{ "pid":12345, "tid":5, "ts":1687153767749739, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767749898, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/38he_metadata1.lump.cpp" }}
-,{ "pid":12345, "tid":5, "ts":1687153767749899, "dur":182, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767750082, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/b1f9_tests2.lump.cpp" }}
-,{ "pid":12345, "tid":5, "ts":1687153767750083, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767750222, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/0fsi_Posix3.lump.cpp" }}
-,{ "pid":12345, "tid":5, "ts":1687153767750223, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767750377, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/hbfb_utils2.lump.cpp" }}
-,{ "pid":12345, "tid":5, "ts":1687153767750378, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767750514, "dur":661, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/d6oy_tils2.lump.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767751175, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767751279, "dur":466, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/we3f_inRT0.lump.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767751745, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767751850, "dur":451, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/7cfg_osix4.lump.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767752301, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767752414, "dur":275, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/cpob_ests3.lump.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767752689, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767752792, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/4wx0_-api0.lump.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767752952, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767753035, "dur":1671, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/fmfi_stem1.lump.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767754706, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767754807, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/3fhy_context.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767754878, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767754966, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/cxp9_transform.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767755018, "dur":1180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767756199, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/33b9_gzwrite.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767756228, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767756334, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/mtm2_teral_cost.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767756382, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767756488, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/gwgo_ersistence.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767756543, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767756651, "dur":367, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/uadx_imeImports.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767757018, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767757114, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/jzol_Evidence.o" }}
-,{ "pid":12345, "tid":5, "ts":1687153767757199, "dur":336, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767757535, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/carva/RetroRumbleWeb/TemplateData/unity-logo-dark.png" }}
-,{ "pid":12345, "tid":5, "ts":1687153767757556, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767757666, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/carva/RetroRumbleWeb/TemplateData/webgl-logo.png" }}
-,{ "pid":12345, "tid":5, "ts":1687153767757680, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1687153767757814, "dur":10223592, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687153767734303, "dur":1012, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687153767735317, "dur":378, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687153767735695, "dur":13601, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687153767749306, "dur":966704, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"UnityLinker C:/Retro_Rumble/RetroRumble/Library/Bee/artifacts/unitylinker_ber2.traceevents" }}
-,{ "pid":12345, "tid":6, "ts":1687153768716489, "dur":79, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1687153768734481, "dur":9223968, "ph":"X", "name": "UnityLinker",  "args": { "detail":"C:/Retro_Rumble/RetroRumble/Library/Bee/artifacts/unitylinker_ber2.traceevents" }}
-,{ "pid":12345, "tid":7, "ts":1687153767734332, "dur":995, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767735330, "dur":459, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767735789, "dur":13517, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767749307, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/2if8_System0.lump.cpp" }}
-,{ "pid":12345, "tid":7, "ts":1687153767749310, "dur":225, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767749536, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/i9ec_System0.lump.cpp" }}
-,{ "pid":12345, "tid":7, "ts":1687153767749538, "dur":181, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767749721, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/o9t4_os1.lump.cpp" }}
-,{ "pid":12345, "tid":7, "ts":1687153767749722, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767749896, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/38he_metadata0.lump.cpp" }}
-,{ "pid":12345, "tid":7, "ts":1687153767749898, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767750072, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/b1f9_tests1.lump.cpp" }}
-,{ "pid":12345, "tid":7, "ts":1687153767750073, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767750211, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/0fsi_Posix2.lump.cpp" }}
-,{ "pid":12345, "tid":7, "ts":1687153767750213, "dur":161, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767750376, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/hbfb_utils1.lump.cpp" }}
-,{ "pid":12345, "tid":7, "ts":1687153767750377, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767750539, "dur":1164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/aneg_tils1.lump.o" }}
-,{ "pid":12345, "tid":7, "ts":1687153767751703, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767751799, "dur":366, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/oe9p_in321.lump.o" }}
-,{ "pid":12345, "tid":7, "ts":1687153767752165, "dur":104, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767752270, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/s3cu_rity0.lump.o" }}
-,{ "pid":12345, "tid":7, "ts":1687153767752460, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767752556, "dur":723, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/qumi_ests1.lump.o" }}
-,{ "pid":12345, "tid":7, "ts":1687153767753280, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767753387, "dur":493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/w9ga_ting0.lump.o" }}
-,{ "pid":12345, "tid":7, "ts":1687153767753880, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767753973, "dur":587, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/azte_stem2.lump.o" }}
-,{ "pid":12345, "tid":7, "ts":1687153767754560, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767754652, "dur":2807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/bdwgc/master_WebGL_wasm/8m34_gc.o" }}
-,{ "pid":12345, "tid":7, "ts":1687153767757459, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767757586, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"PreprocessJS C:/Users/carva/RetroRumbleWeb/TemplateData/style.css" }}
-,{ "pid":12345, "tid":7, "ts":1687153767757608, "dur":202, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1687153767757810, "dur":10223593, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767734361, "dur":972, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767735334, "dur":382, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767735716, "dur":13595, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767749312, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/b1bi_codegen0.lump.cpp" }}
-,{ "pid":12345, "tid":8, "ts":1687153767749314, "dur":200, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767749516, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/_dummy_for_header_discovery" }}
-,{ "pid":12345, "tid":8, "ts":1687153767749517, "dur":226, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767749745, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/3b9d_e.Remoting0.lump.cpp" }}
-,{ "pid":12345, "tid":8, "ts":1687153767749746, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767749928, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/0u4f_Android0.lump.cpp" }}
-,{ "pid":12345, "tid":8, "ts":1687153767749929, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767750100, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/x985_LibraryPAL0.lump.cpp" }}
-,{ "pid":12345, "tid":8, "ts":1687153767750101, "dur":191, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767750294, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/cjyx_Win322.lump.cpp" }}
-,{ "pid":12345, "tid":8, "ts":1687153767750295, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767750470, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/j3py_vm2.lump.cpp" }}
-,{ "pid":12345, "tid":8, "ts":1687153767750471, "dur":279, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767750751, "dur":1393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/l4r0_y_vm2.lump.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767752144, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767752239, "dur":373, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/8cu6_umin0.lump.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767752612, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767752693, "dur":549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/taac_-api3.lump.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767753243, "dur":502, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767753746, "dur":563, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/zulp_stem0.lump.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767754309, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767754487, "dur":824, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/d1eu_y_vm6.lump.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767755311, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767755413, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/nbjd_decode.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767755530, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767755638, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/msc7_k_splitter.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767755748, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767755846, "dur":532, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/f2g4_c_gc0.lump.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767756379, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767756486, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/3pkw_temWatcher.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767756577, "dur":374, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767756952, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/pmdx_iveMethods.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767757005, "dur":212, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767757218, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/cgwb_bit_cost.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767757351, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767757449, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/3x3h_cluster.o" }}
-,{ "pid":12345, "tid":8, "ts":1687153767757515, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767757621, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/carva/RetroRumbleWeb/TemplateData/fullscreen-button.png" }}
-,{ "pid":12345, "tid":8, "ts":1687153767757644, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1687153767757773, "dur":10223616, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767734388, "dur":949, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767735338, "dur":453, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767735792, "dur":13510, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767749309, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/2if8_System3.lump.cpp" }}
-,{ "pid":12345, "tid":9, "ts":1687153767749311, "dur":223, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767749535, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WebGL/GameAssembly/master_WebGL_wasm/_dummy_for_header_discovery" }}
-,{ "pid":12345, "tid":9, "ts":1687153767749536, "dur":170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767749707, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/cjyx_Win320.lump.cpp" }}
-,{ "pid":12345, "tid":9, "ts":1687153767749709, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767749887, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/xhqd_System.Net0.lump.cpp" }}
-,{ "pid":12345, "tid":9, "ts":1687153767749888, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767750067, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/b1f9_tests0.lump.cpp" }}
-,{ "pid":12345, "tid":9, "ts":1687153767750069, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767750207, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/0fsi_Posix0.lump.cpp" }}
-,{ "pid":12345, "tid":9, "ts":1687153767750209, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767750357, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/bcdm_WinRT1.lump.cpp" }}
-,{ "pid":12345, "tid":9, "ts":1687153767750358, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767750502, "dur":1264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/fquq_inRT1.lump.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767751767, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767751862, "dur":650, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/o1n5_osix3.lump.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767752512, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767752620, "dur":642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/nbc0_ests0.lump.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767753262, "dur":108, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767753370, "dur":717, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/2wj0_stem0.lump.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767754087, "dur":169, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767754257, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/88y0_adler32.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767754444, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767754568, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/nrh7_stem0.lump.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767754748, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767754865, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/zt3w_Interop.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767754943, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767755027, "dur":315, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/gqv3_Semaphore.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767755342, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767755434, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/e1qx_deflate.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767755466, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767755611, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/orlb_inffast.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767755638, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767755727, "dur":328, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/o4rl_stem0.lump.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756055, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756141, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/oky7_ceProvider.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756240, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756345, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/80ee_ningHelper.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756429, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756525, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/2mjq_derFactory.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756574, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756690, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/3r3k_t_two_pass.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756817, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756906, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/s3jy_onary_hash.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767756932, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767757019, "dur":368, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/c02m_i-debugger.o" }}
-,{ "pid":12345, "tid":9, "ts":1687153767757387, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767757515, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/build.framework.js_mumr.info" }}
-,{ "pid":12345, "tid":9, "ts":1687153767757516, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767757630, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/carva/RetroRumbleWeb/TemplateData/favicon.ico" }}
-,{ "pid":12345, "tid":9, "ts":1687153767757645, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1687153767757765, "dur":10223645, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767734405, "dur":937, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767735344, "dur":377, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767735721, "dur":13600, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767749321, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/_dummy_for_header_discovery" }}
-,{ "pid":12345, "tid":10, "ts":1687153767749323, "dur":196, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767749520, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WebGL/bdwgc/master_WebGL_wasm/_dummy_for_header_discovery" }}
-,{ "pid":12345, "tid":10, "ts":1687153767749520, "dur":182, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767749704, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/lf5p_System0.lump.cpp" }}
-,{ "pid":12345, "tid":10, "ts":1687153767749706, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767749855, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/e9hg_System0.lump.cpp" }}
-,{ "pid":12345, "tid":10, "ts":1687153767749856, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767750011, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/h3v3_c-api1.lump.cpp" }}
-,{ "pid":12345, "tid":10, "ts":1687153767750012, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767750144, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/00mh_m.Security0.lump.cpp" }}
-,{ "pid":12345, "tid":10, "ts":1687153767750145, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767750295, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/cjyx_Win323.lump.cpp" }}
-,{ "pid":12345, "tid":10, "ts":1687153767750296, "dur":228, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767750525, "dur":1305, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/uguq_in323.lump.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767751830, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767751959, "dur":170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/ww1o__OSX0.lump.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767752130, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767752218, "dur":534, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/fgsm_osix0.lump.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767752752, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767752845, "dur":339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/lilw_data2.lump.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767753185, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767753286, "dur":741, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/fg0v_data0.lump.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767754027, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767754112, "dur":465, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/iz24_osix1.lump.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767754578, "dur":369, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767754948, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/sx5w_gzread.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767755028, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767755131, "dur":325, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/184x_histogram.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767755456, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767755597, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/xgiy_uncompr.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767755615, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767755700, "dur":265, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/btwr_stem0.lump.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767755965, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767756047, "dur":746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/1g9x_2cpp0.lump.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767756793, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767756894, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/cjj3_tatic_dict.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767756939, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767757031, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/odwl_nterlocked.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767757247, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767757339, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/5sdj_gzlib.o" }}
-,{ "pid":12345, "tid":10, "ts":1687153767757359, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767757493, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info" }}
-,{ "pid":12345, "tid":10, "ts":1687153767757495, "dur":302, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1687153767757798, "dur":10223600, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767734425, "dur":922, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767735348, "dur":13949, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767749306, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/j3py_vm3.lump.cpp" }}
-,{ "pid":12345, "tid":11, "ts":1687153767749310, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767749524, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/2if8_System1.lump.cpp" }}
-,{ "pid":12345, "tid":11, "ts":1687153767749526, "dur":170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767749698, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/o9t4_os0.lump.cpp" }}
-,{ "pid":12345, "tid":11, "ts":1687153767749699, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767749848, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/piun_System0.lump.cpp" }}
-,{ "pid":12345, "tid":11, "ts":1687153767749849, "dur":174, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767750024, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/h3v3_c-api3.lump.cpp" }}
-,{ "pid":12345, "tid":11, "ts":1687153767750026, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767750170, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/idem_Lumin0.lump.cpp" }}
-,{ "pid":12345, "tid":11, "ts":1687153767750171, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767750300, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/bcdm_WinRT0.lump.cpp" }}
-,{ "pid":12345, "tid":11, "ts":1687153767750301, "dur":171, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767750474, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/j3py_vm4.lump.cpp" }}
-,{ "pid":12345, "tid":11, "ts":1687153767750474, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767750575, "dur":1559, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/r6c1_y_vm4.lump.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767752134, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767752249, "dur":471, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/pkgx_eric2.lump.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767752720, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767752810, "dur":430, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/7f8i_-api1.lump.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767753240, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767753361, "dur":565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/3lpq_.Net0.lump.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767753926, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767754023, "dur":593, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/csj3_stem0.lump.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767754617, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767754704, "dur":574, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/m15e_eric1.lump.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767755278, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767755398, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/1bac_utf8_util.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767755459, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767755602, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/kyua_gzclose.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767755625, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767755725, "dur":890, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/5c6f_egen0.lump.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767756615, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767756717, "dur":355, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/hcyh_onServices.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767757072, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767757158, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/ecck_fast_log.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767757191, "dur":144, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767757336, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/7ey1_zutil.o" }}
-,{ "pid":12345, "tid":11, "ts":1687153767757358, "dur":239, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767757598, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/carva/RetroRumbleWeb/TemplateData/progress-bar-full-dark.png" }}
-,{ "pid":12345, "tid":11, "ts":1687153767757662, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1687153767757826, "dur":10223591, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767734445, "dur":907, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767735352, "dur":13948, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767749305, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/g3r8_System0.lump.cpp" }}
-,{ "pid":12345, "tid":12, "ts":1687153767749310, "dur":205, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767749517, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/wxyl_Generic1.lump.cpp" }}
-,{ "pid":12345, "tid":12, "ts":1687153767749519, "dur":171, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767749693, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/0fsi_Posix1.lump.cpp" }}
-,{ "pid":12345, "tid":12, "ts":1687153767749694, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767749850, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/kl93_System0.lump.cpp" }}
-,{ "pid":12345, "tid":12, "ts":1687153767749851, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767750005, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/h3v3_c-api0.lump.cpp" }}
-,{ "pid":12345, "tid":12, "ts":1687153767750006, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767750145, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/wxyl_Generic2.lump.cpp" }}
-,{ "pid":12345, "tid":12, "ts":1687153767750146, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767750296, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/cjyx_Win324.lump.cpp" }}
-,{ "pid":12345, "tid":12, "ts":1687153767750297, "dur":197, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767750496, "dur":1340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/dsl1_in324.lump.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767751836, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767751942, "dur":428, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/lidn_osix2.lump.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767752370, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767752456, "dur":623, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/95dt_ests2.lump.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767753079, "dur":179, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767753258, "dur":469, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/izae_data1.lump.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767753727, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767753815, "dur":829, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/dpyo_time0.lump.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767754645, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767754725, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/612k_Context.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767754812, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767754931, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/ii5x_state.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767755117, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767755196, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/33bq_constants.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767755249, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767755321, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/5eaw_RealProxy.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767755384, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767755466, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/master_WebGL_wasm/alvf_inflate.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767755528, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767755631, "dur":289, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/q203_Dns.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767755921, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767756000, "dur":936, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/on2i_y_vm3.lump.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767756936, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767757042, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/e9tn_ThreadImpl.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767757086, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767757195, "dur":279, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/master_WebGL_wasm/t2wh_UnityTls.o" }}
-,{ "pid":12345, "tid":12, "ts":1687153767757474, "dur":341, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1687153767757816, "dur":10223597, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1687153777991930, "dur":1762, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1687173790194386, "dur":5927, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790200321, "dur":58, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1687173790200389, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1687173790200409, "dur":857, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1687173790201313, "dur":686, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790201999, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383531, "dur":236, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383767, "dur":119, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383886, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383890, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383899, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383901, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383909, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383911, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383918, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383920, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383925, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383927, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383937, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383939, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383946, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383948, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383955, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383957, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383963, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383965, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383971, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383973, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383979, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383981, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790383988, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790384001, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790384008, "dur":4926, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1687173790202443, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790202444, "dur":5031, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790207485, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1687173790207493, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790209211, "dur":1012, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1687173790210230, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1687173790210304, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790210801, "dur":8692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1687173790219494, "dur":3839, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1687173790223339, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790223352, "dur":3362, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1687173790226762, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1687173790226863, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790227288, "dur":24740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1687173790252084, "dur":951, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790253039, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790253048, "dur":4285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790257392, "dur":1304, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790258702, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790258713, "dur":4287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790263061, "dur":969, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790264036, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790264045, "dur":7230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790271326, "dur":1486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790272815, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790272822, "dur":4892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790277760, "dur":1814, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790279581, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790279592, "dur":6746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790286383, "dur":2084, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790288471, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790288477, "dur":6300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790294832, "dur":1432, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790296271, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790296283, "dur":5378, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790301719, "dur":2304, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790304028, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790304037, "dur":6940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790311028, "dur":1474, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790312508, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790312520, "dur":5419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1687173790317999, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":1, "ts":1687173790318068, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790318076, "dur":12110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":1, "ts":1687173790330241, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1687173790330295, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1687173790330356, "dur":4166, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1687173790334572, "dur":48954, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790202738, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790202738, "dur":4790, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790207529, "dur":3511, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1687173790211042, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790214664, "dur":4669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1687173790219390, "dur":3694, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1687173790223092, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790223305, "dur":3260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1687173790226676, "dur":1957, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project.exe" }}
+,{ "pid":12345, "tid":2, "ts":1687173790228636, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790228642, "dur":3297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project.exe" }}
+,{ "pid":12345, "tid":2, "ts":1687173790232002, "dur":920, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790232926, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790232933, "dur":4053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790237046, "dur":976, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790238027, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790238035, "dur":4491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790242585, "dur":991, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790243582, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790243592, "dur":4288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790247966, "dur":1462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790249432, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790249441, "dur":3915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790253415, "dur":1232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790254655, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790254667, "dur":4353, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790259080, "dur":885, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790259972, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790259982, "dur":4401, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790264440, "dur":807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790265251, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790265259, "dur":7128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790272452, "dur":924, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790273379, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790273386, "dur":4914, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790278357, "dur":1599, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790279962, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790279971, "dur":6153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790286174, "dur":2491, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790288672, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790288719, "dur":5847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790294633, "dur":1814, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790296451, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790296460, "dur":6049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.Cecil.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790302563, "dur":1777, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790304343, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790304350, "dur":4409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790308825, "dur":9442, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790318270, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790318279, "dur":9109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":2, "ts":1687173790327444, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1687173790327506, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1687173790327518, "dur":4280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1687173790331849, "dur":51698, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790202583, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790202584, "dur":4961, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790207545, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1687173790207724, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790234378, "dur":34773, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1687173790269197, "dur":1555, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790270756, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790270765, "dur":6492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790277318, "dur":4181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790281502, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790281508, "dur":7392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790288956, "dur":4441, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790293403, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790293416, "dur":5536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790298989, "dur":979, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790299972, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790299980, "dur":5220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790305251, "dur":1144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790306398, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790306405, "dur":6871, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790313328, "dur":1770, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790315106, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790315118, "dur":4783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1687173790319956, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":3, "ts":1687173790320013, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790320019, "dur":10589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":3, "ts":1687173790330665, "dur":5056, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1687173790335724, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1687173790335731, "dur":2491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1687173790338273, "dur":45265, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790202882, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790202882, "dur":4649, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790207532, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1687173790207713, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790215589, "dur":4714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1687173790220371, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1687173790220502, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790220511, "dur":6370, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1687173790226929, "dur":930, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790227863, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790228281, "dur":3258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790231616, "dur":1045, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790232665, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790232674, "dur":4328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790237054, "dur":925, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790237981, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790237987, "dur":3690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790241732, "dur":835, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790242572, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790242582, "dur":5484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790248121, "dur":4234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790252361, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790252371, "dur":4765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790257196, "dur":900, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790258099, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790258106, "dur":4837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790263014, "dur":1098, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790264117, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790264126, "dur":6423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790270602, "dur":1630, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790272236, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790272245, "dur":5083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790277387, "dur":1010, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790278403, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790278411, "dur":5480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790283929, "dur":950, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790284882, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790284889, "dur":4599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790289559, "dur":1068, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790290633, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790290644, "dur":3878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790294593, "dur":1180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790295777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790295786, "dur":4904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.Cecil.Mdb.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790300744, "dur":715, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790301463, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790301471, "dur":4842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790306368, "dur":2490, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790308862, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790308871, "dur":7897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":4, "ts":1687173790316822, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1687173790316872, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790316924, "dur":4287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1687173790321273, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1687173790321347, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1687173790321359, "dur":13083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1687173790334498, "dur":49037, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790203039, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790203040, "dur":4437, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790207485, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1687173790207640, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790224388, "dur":5736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1687173790230184, "dur":1133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790231320, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790231441, "dur":4315, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790235810, "dur":875, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790236690, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790236699, "dur":3336, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790240093, "dur":1679, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790241778, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790241802, "dur":5336, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790247197, "dur":1301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790248505, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790248518, "dur":3893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790252477, "dur":1034, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790253515, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790253525, "dur":4525, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790258105, "dur":792, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790258900, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790258905, "dur":4776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790263732, "dur":883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790264618, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790264625, "dur":7370, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790272065, "dur":1022, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790273090, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790273094, "dur":6014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790279183, "dur":1104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790280291, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790280301, "dur":6659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790287024, "dur":1252, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790288282, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790288295, "dur":6731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790295085, "dur":893, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790295982, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790295990, "dur":7692, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790303824, "dur":806, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790304634, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790304640, "dur":5460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790310159, "dur":1032, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790311196, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790311207, "dur":4915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790316173, "dur":1456, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790317700, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790319652, "dur":3726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":5, "ts":1687173790323440, "dur":8587, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1687173790332031, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1687173790332040, "dur":3875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1687173790335971, "dur":47562, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687173790203183, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687173790203184, "dur":4347, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687173790207531, "dur":3561, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1687173790211096, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687173790214314, "dur":5005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1687173790219404, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1687173790219534, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687173790219904, "dur":5321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1687173790225284, "dur":59800, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687173790285087, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687173790285152, "dur":11292, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687173790296520, "dur":851, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687173790297374, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687173790297378, "dur":6537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687173790303963, "dur":1228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687173790305195, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687173790305205, "dur":6354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687173790311616, "dur":1260, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687173790312879, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687173790312887, "dur":5263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":6, "ts":1687173790318209, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1687173790318271, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1687173790318278, "dur":65182, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1687173790383499, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":6, "ts":1687173790383501, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790203330, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790203330, "dur":4198, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790207528, "dur":181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1687173790207715, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790219359, "dur":5822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1687173790225246, "dur":5780, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790231033, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790231832, "dur":3959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790235843, "dur":1006, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790236878, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790236886, "dur":3498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790240438, "dur":1080, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790241526, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790241540, "dur":3333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790244929, "dur":828, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790245759, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790245765, "dur":3902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790249721, "dur":1195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790250923, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790250935, "dur":5464, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790256453, "dur":1170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790257626, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790257633, "dur":5317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790263014, "dur":1081, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790264101, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790264110, "dur":7825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790272001, "dur":948, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790272952, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790272959, "dur":5240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790278256, "dur":1248, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790279508, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790279516, "dur":6101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790285674, "dur":1121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790286800, "dur":13, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790286823, "dur":6346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790293462, "dur":1191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790294684, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790294695, "dur":5628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790300380, "dur":7908, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790308293, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790308303, "dur":7509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790315866, "dur":938, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790316809, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790316820, "dur":5294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1687173790322171, "dur":11763, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":7, "ts":1687173790333940, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1687173790333953, "dur":2913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":7, "ts":1687173790336919, "dur":46615, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687173790203467, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687173790203467, "dur":4009, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687173790207486, "dur":3118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":8, "ts":1687173790210608, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687173790213590, "dur":5894, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":8, "ts":1687173790219538, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1687173790219677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687173790219684, "dur":6699, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1687173790226444, "dur":108965, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687173790335413, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1687173790335419, "dur":18339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":8, "ts":1687173790353810, "dur":29729, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790203598, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790203598, "dur":3932, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790207530, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1687173790207722, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790229720, "dur":7159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1687173790236943, "dur":968, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790237918, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790237929, "dur":3438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790241463, "dur":909, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790242379, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790242390, "dur":4308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790246759, "dur":1046, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790247810, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790247820, "dur":3898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790251777, "dur":1296, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790253079, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790253088, "dur":3890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790257042, "dur":893, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790257938, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790257946, "dur":4899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790262916, "dur":1349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790264268, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790264277, "dur":6555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790270886, "dur":1280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790272173, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790272185, "dur":5235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790277474, "dur":921, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790278398, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790278408, "dur":7033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790285500, "dur":2145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790287651, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790287674, "dur":5162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790292903, "dur":2380, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790295288, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790295300, "dur":6020, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790301372, "dur":1529, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790302906, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790302919, "dur":5849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790308847, "dur":8154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790317006, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790317015, "dur":7154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":9, "ts":1687173790324223, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1687173790324274, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1687173790324282, "dur":7275, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1687173790331628, "dur":51904, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790203749, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790203749, "dur":3780, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790207530, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1687173790207712, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790214614, "dur":24942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1687173790239614, "dur":912, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790240530, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790240540, "dur":3907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790244510, "dur":979, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790245530, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790245540, "dur":5444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790251076, "dur":1065, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790252144, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790252152, "dur":3624, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790255842, "dur":1058, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790256925, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790256938, "dur":4290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790261284, "dur":1197, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790262486, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790262496, "dur":7274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790269822, "dur":1445, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790271271, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790271315, "dur":6060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790277435, "dur":936, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790278376, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790278388, "dur":5465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790283908, "dur":1018, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790284929, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790284934, "dur":5307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790290312, "dur":1609, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790291928, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790291939, "dur":4927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790296918, "dur":611, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790297532, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790297539, "dur":5280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790302896, "dur":1255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790304154, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790304161, "dur":6091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790310305, "dur":4971, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790315281, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790315288, "dur":6589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1687173790321928, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":10, "ts":1687173790322091, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790322100, "dur":4211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":10, "ts":1687173790326369, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/level1" }}
+,{ "pid":12345, "tid":10, "ts":1687173790326426, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1687173790326437, "dur":5224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/level1" }}
+,{ "pid":12345, "tid":10, "ts":1687173790331715, "dur":51813, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790203895, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790203896, "dur":3631, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790207527, "dur":3392, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1687173790210922, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790214618, "dur":4586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1687173790219294, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1687173790219448, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790220250, "dur":6323, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1687173790226656, "dur":11148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":11, "ts":1687173790237811, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790237820, "dur":4677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":11, "ts":1687173790242572, "dur":880, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790243457, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790243466, "dur":5328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790248865, "dur":2263, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790251133, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790251144, "dur":5249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790256449, "dur":1613, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790258067, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790258076, "dur":4704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790262851, "dur":1092, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790263947, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790263973, "dur":6297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790270326, "dur":940, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790271269, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790271279, "dur":6488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790277822, "dur":1108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790278935, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790278944, "dur":6491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790285492, "dur":2588, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790288084, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790288093, "dur":6593, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790294750, "dur":1201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790295958, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790295971, "dur":6387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790302437, "dur":3814, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790306257, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790306269, "dur":5941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790312276, "dur":16038, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790328334, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1687173790328356, "dur":8629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":11, "ts":1687173790337071, "dur":46470, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790203980, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790203980, "dur":3552, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790207532, "dur":3573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":12, "ts":1687173790211189, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790214220, "dur":5254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":12, "ts":1687173790219529, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1687173790219701, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790219929, "dur":29451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1687173790249439, "dur":1262, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790250709, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790250723, "dur":5059, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790256054, "dur":1596, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790257653, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790257708, "dur":4993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790262767, "dur":1415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790264188, "dur":94, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790264289, "dur":8076, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790272425, "dur":828, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790273256, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790273262, "dur":5839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790279165, "dur":1130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790280297, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790280303, "dur":6216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790286598, "dur":2938, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790289554, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790289564, "dur":6844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790296469, "dur":872, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790297371, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790297377, "dur":6215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790303666, "dur":1177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790304849, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790304857, "dur":6253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790311170, "dur":2377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790313551, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790313559, "dur":6100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":12, "ts":1687173790319843, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":12, "ts":1687173790319897, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790319907, "dur":4864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":12, "ts":1687173790324836, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/resources.assets" }}
+,{ "pid":12345, "tid":12, "ts":1687173790324892, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790324902, "dur":5686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/resources.assets" }}
+,{ "pid":12345, "tid":12, "ts":1687173790330654, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":12, "ts":1687173790330727, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1687173790330736, "dur":4069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/ricardo.carvalho2/Desktop/Retro Rumble/My project_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":12, "ts":1687173790334849, "dur":48681, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1687173790393890, "dur":2480, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

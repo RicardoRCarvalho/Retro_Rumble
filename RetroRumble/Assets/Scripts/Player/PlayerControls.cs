@@ -135,11 +135,17 @@ public class PlayerControls : MonoBehaviour
         {
             PlayerInput pi = GetComponent<PlayerInput>();
             pi.actions.FindAction("Move").Disable();
+            pi.actions.FindAction("Jump").Disable();
+            pi.actions.FindAction("Attack").Disable();
+            pi.actions.FindAction("Special").Disable();
         }
         else
         {
             PlayerInput pi = GetComponent<PlayerInput>();
             pi.actions.FindAction("Move").Enable();
+            pi.actions.FindAction("Jump").Enable();
+            pi.actions.FindAction("Attack").Enable();
+            pi.actions.FindAction("Special").Enable();
         }
         MP.transform.localScale = new Vector3(mana*0.01f, 1f, 1f);
 
@@ -148,6 +154,7 @@ public class PlayerControls : MonoBehaviour
         {
             PlayerInput pi = GetComponent<PlayerInput>();
             pi.actions.FindAction("Move").Disable();
+            rbPcSombra.velocity=new Vector2(0f,0f);
         }
         else if (stair == false)
         {
@@ -433,11 +440,11 @@ public class PlayerControls : MonoBehaviour
     {
         anim.SetBool("death", true);
         yield return new WaitForSeconds(2);
-        this.gameObject.SetActive(false);
         if (life <= 0 && otherPlayerControls.life <= 0)
         {
             SceneManager.LoadScene("Menu");
         }
+        this.gameObject.SetActive(false);
     }
 
     IEnumerator Vibrate()
