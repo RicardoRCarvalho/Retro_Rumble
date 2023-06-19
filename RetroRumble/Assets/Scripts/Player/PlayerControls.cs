@@ -442,13 +442,13 @@ public class PlayerControls : MonoBehaviour
 
     IEnumerator Vibrate()
     {
-        if (player.name == "Player1")
+        if (player.name == "Player2")
         {
             gamepad1.SetMotorSpeeds(0.25f, 0.75f);
             yield return new WaitForSeconds(1);
             gamepad1.SetMotorSpeeds(0f, 0f);
         }
-        else if (player.name == "Player2")
+        else if (player.name == "Player1")
         {
             if(Gamepad.all.ElementAtOrDefault(1) != null)
             {
